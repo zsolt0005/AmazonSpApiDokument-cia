@@ -1,0 +1,71 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-12T09:34:41.4977603"><meta name="build-number" content="${buildNumber}">       <title>List orders | Amazon</title><script id="virtual-toc-data" type="application/json">[]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="List orders | Amazon"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="Amazon Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="/amazon/1.0.0/list-orders.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="List orders | Amazon"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "/amazon/1.0.0/list-orders.html#webpage", "url": "/amazon/1.0.0/list-orders.html", "name": "List orders | Amazon", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/amazon/#website", "url": "/amazon/", "name": "Amazon Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="List-orders" data-main-title="List orders" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="Api.md|Api///Order.md|Order"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Amazon 1.0.0 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="List-orders"  id="List-orders.md"  >List orders</h1>  <div class="tabs" id="f6101ffb_278"><div class="tabs__content" data-gtm="tab" id="f6101ffb_279"   data-title="HTTP Request" ><div class="code-block" data-lang="http"    data-title="HTTP"   data-disable-link-processing="true"  >GET https://sellingpartnerapi-eu.amazon.com/orders/v0/orders
+    ?MarketplaceIds=&lt;Marketplace Ids&gt;
+    &amp;CreatedAfter=&lt;Created After Date&gt;
+    &amp;OrderStatuses=&lt;Order statuses&gt;
+x-amz-access-token: &lt;access token&gt;</div><p> <b id="f6101ffb_281">Params</b></p><div class="table-wrapper" ><table class="left_header wide" id="f6101ffb_282"  ><thead><tr class="ijRowHead" id="f6101ffb_283"><th id="f6101ffb_284"><p><b id="f6101ffb_285">Name</b></p></th><th id="f6101ffb_286"><p><b id="f6101ffb_287">Description</b></p></th><th id="f6101ffb_288"><p><b id="f6101ffb_289">Required</b></p></th></tr></thead><tbody ><tr id="f6101ffb_290"><th id="f6101ffb_291"><p><b id="f6101ffb_292">CreatedAfter</b></p></th><td id="f6101ffb_293"><p>A date used for selecting orders created after (or at) a specified time.</p></td><td id="f6101ffb_294"><p><b id="f6101ffb_295">NO</b></p></td></tr><tr id="f6101ffb_296"><th id="f6101ffb_297"><p><b id="f6101ffb_298">CreatedBefore</b></p></th><td id="f6101ffb_299"><p>A date used for selecting orders created before (or at) a specified time.</p></td><td id="f6101ffb_300"><p><b id="f6101ffb_301">NO</b></p></td></tr><tr id="f6101ffb_302"><th id="f6101ffb_303"><p><b id="f6101ffb_304">OrderStatuses</b></p></th><td id="f6101ffb_305"><p>A list of OrderStatus values used to filter the results.</p></td><td id="f6101ffb_306"><p><b id="f6101ffb_307">NO</b></p></td></tr><tr id="f6101ffb_308"><th id="f6101ffb_309"><p><b id="f6101ffb_310">MarketplaceIds</b></p></th><td id="f6101ffb_311"><p>A list of MarketplaceId values.</p></td><td id="f6101ffb_312"><p><b id="f6101ffb_313">YES</b></p></td></tr><tr id="f6101ffb_314"><th id="f6101ffb_315"><p><b id="f6101ffb_316">FulfillmentChannels</b></p></th><td id="f6101ffb_317"><p>A list that indicates how an order was fulfilled. Filters the results by fulfillment channel. Possible values: AFN (Fulfillment by Amazon); MFN (Fulfilled by the seller).</p></td><td id="f6101ffb_318"><p><b id="f6101ffb_319">NO</b></p></td></tr><tr id="f6101ffb_320"><th id="f6101ffb_321"><p><b id="f6101ffb_322">NextToken</b></p></th><td id="f6101ffb_323"><p>A string token returned in the response of your previous request.</p></td><td id="f6101ffb_324"><p><b id="f6101ffb_325">NO</b></p></td></tr></tbody ></table ></div><aside class="prompt" data-type="warning" data-title="" id="f6101ffb_326"><p>Either <b id="f6101ffb_327">CreatedAfter</b> or <b id="f6101ffb_328">CreatedBefore</b> must be specified!</p></aside><aside class="prompt" data-type="tip" data-title="" id="f6101ffb_329"><p>To see all URL params visit <b id="f6101ffb_330"><a href="https://developer-docs.amazon.com/sp-api/docs/orders-api-v0-reference#get-ordersv0orders" id="f6101ffb_331"   data-external="true" rel="noopener noreferrer" >here</a></b></p></aside><br><p> <b id="f6101ffb_333">Order Statuses</b></p><div class="table-wrapper" ><table class="left_header wide" id="f6101ffb_334"  ><thead><tr class="ijRowHead" id="f6101ffb_335"><th id="f6101ffb_336"><p><b id="f6101ffb_337">Status</b></p></th><th id="f6101ffb_338"><p><b id="f6101ffb_339">Description</b></p></th></tr></thead><tbody ><tr id="f6101ffb_340"><th id="f6101ffb_341"><p><b id="f6101ffb_342">PendingAvailability</b></p></th><td id="f6101ffb_343"><p>This status is available for pre-orders only. The order has been placed, payment has not been authorized, and the release date of the item is in the future.</p></td></tr><tr id="f6101ffb_344"><th id="f6101ffb_345"><p><b id="f6101ffb_346">Pending</b></p></th><td id="f6101ffb_347"><p>The order has been placed but payment has not been authorized.</p></td></tr><tr id="f6101ffb_348"><th id="f6101ffb_349"><p><b id="f6101ffb_350">Unshipped</b></p></th><td id="f6101ffb_351"><p>Payment has been authorized and the order is ready for shipment, but no items in the order have been shipped.</p></td></tr><tr id="f6101ffb_352"><th id="f6101ffb_353"><p><b id="f6101ffb_354">PartiallyShipped</b></p></th><td id="f6101ffb_355"><p>One or more, but not all, items in the order have been shipped.</p></td></tr><tr id="f6101ffb_356"><th id="f6101ffb_357"><p><b id="f6101ffb_358">Shipped</b></p></th><td id="f6101ffb_359"><p>All items in the order have been shipped.</p></td></tr><tr id="f6101ffb_360"><th id="f6101ffb_361"><p><b id="f6101ffb_362">InvoiceUnconfirmed</b></p></th><td id="f6101ffb_363"><p>All items in the order have been shipped. The seller has not yet given confirmation to Amazon that the invoice has been shipped to the buyer.</p></td></tr><tr id="f6101ffb_364"><th id="f6101ffb_365"><p><b id="f6101ffb_366">Canceled</b></p></th><td id="f6101ffb_367"><p>The order has been canceled.</p></td></tr><tr id="f6101ffb_368"><th id="f6101ffb_369"><p><b id="f6101ffb_370">Unfulfillable</b></p></th><td id="f6101ffb_371"><p>The order cannot be fulfilled. This state applies only to Multi-Channel Fulfillment orders.</p></td></tr></tbody ></table ></div><br><aside class="prompt" data-type="tip" data-title="" id="f6101ffb_373"><p>To see all marketplace ids visit <b id="f6101ffb_374"><a href="https://developer-docs.amazon.com/sp-api/docs/marketplace-ids" id="f6101ffb_375"   data-external="true" rel="noopener noreferrer" >here</a></b></p></aside></div><div class="tabs__content" data-gtm="tab" id="f6101ffb_376"   data-title="Response (200)" ><div class="code-block" data-lang="json"    data-title="JSON"   data-disable-link-processing="true"  >{
+  &quot;payload&quot;: {
+    &quot;Orders&quot;: [
+      {
+        &quot;BuyerInfo&quot;: {
+          &quot;BuyerEmail&quot;: &quot;...&quot;
+        },
+        &quot;AmazonOrderId&quot;: &quot;...&quot;,
+        &quot;EarliestShipDate&quot;: &quot;2023-11-15T22:59:59Z&quot;,
+        &quot;SalesChannel&quot;: &quot;Amazon.de&quot;,
+        &quot;OrderStatus&quot;: &quot;Shipped&quot;,
+        &quot;NumberOfItemsShipped&quot;: 1,
+        &quot;OrderType&quot;: &quot;StandardOrder&quot;,
+        &quot;IsPremiumOrder&quot;: false,
+        &quot;IsPrime&quot;: false,
+        &quot;FulfillmentChannel&quot;: &quot;AFN&quot;,
+        &quot;NumberOfItemsUnshipped&quot;: 0,
+        &quot;HasRegulatedItems&quot;: false,
+        &quot;IsReplacementOrder&quot;: &quot;false&quot;,
+        &quot;IsSoldByAB&quot;: false,
+        &quot;LatestShipDate&quot;: &quot;2023-11-15T22:59:59Z&quot;,
+        &quot;ShipServiceLevel&quot;: &quot;Expedited&quot;,
+        &quot;IsISPU&quot;: false,
+        &quot;MarketplaceId&quot;: &quot;A1PA6795UKMFR9&quot;,
+        &quot;PurchaseDate&quot;: &quot;2023-11-15T07:53:10Z&quot;,
+        &quot;ShippingAddress&quot;: {
+          &quot;StateOrRegion&quot;: &quot;...&quot;,
+          &quot;PostalCode&quot;: &quot;...&quot;,
+          &quot;City&quot;: &quot;...&quot;,
+          &quot;CountryCode&quot;: &quot;...&quot;
+        },
+        &quot;IsAccessPointOrder&quot;: false,
+        &quot;SellerOrderId&quot;: &quot;...&quot;,
+        &quot;PaymentMethod&quot;: &quot;Other&quot;,
+        &quot;IsBusinessOrder&quot;: false,
+        &quot;OrderTotal&quot;: {
+          &quot;CurrencyCode&quot;: &quot;EUR&quot;,
+          &quot;Amount&quot;: &quot;15.25&quot;
+        },
+        &quot;PaymentMethodDetails&quot;: [
+          &quot;Standard&quot;
+        ],
+        &quot;IsGlobalExpressEnabled&quot;: false,
+        &quot;LastUpdateDate&quot;: &quot;2023-11-15T13:35:32Z&quot;,
+        &quot;ShipmentServiceLevelCategory&quot;: &quot;Expedited&quot;
+      }
+    ],
+    &quot;NextToken&quot;: &quot;...&quot;,
+    &quot;CreatedBefore&quot;: &quot;2023-12-07T06:03:05Z&quot;
+  }
+}</div></div><div class="tabs__content" data-gtm="tab" id="f6101ffb_378"   data-title="Response (400)" ><div class="code-block" data-lang="json"    data-title="JSON"   data-disable-link-processing="true"  >{
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;InvalidInput&quot;,
+      &quot;message&quot;: &quot;CreatedAfter or LastUpdatedAfter must be specified&quot;,
+      &quot;details&quot;: &quot;&quot;
+    }
+  ]
+}</div><br><div class="code-block" data-lang="json"    data-title="JSON"   data-disable-link-processing="true"  >{
+    &quot;errors&quot;: [
+        {
+            &quot;code&quot;: &quot;InvalidInput&quot;,
+            &quot;message&quot;: &quot;This is an invalid input&quot;,
+            &quot;details&quot;: &quot;Invalid Date-Time field(s) [createdAfter].&quot;
+        }
+    ]
+}</div></div></div><div class="last-modified"> Last modified: 12 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="order.html">Order</a>   </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

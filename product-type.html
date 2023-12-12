@@ -1,0 +1,115 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-12T09:34:41.5757574"><meta name="build-number" content="${buildNumber}">       <title>Product type | Amazon</title><script id="virtual-toc-data" type="application/json">[]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Product type | Amazon"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="Amazon Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="/amazon/1.0.0/product-type.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Product type | Amazon"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "/amazon/1.0.0/product-type.html#webpage", "url": "/amazon/1.0.0/product-type.html", "name": "Product type | Amazon", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/amazon/#website", "url": "/amazon/", "name": "Amazon Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="Product-type" data-main-title="Product type" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="Api.md|Api"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Amazon 1.0.0 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Product-type"  id="Product-type.md"  >Product type</h1>  <div class="tabs" id="f636458b_235"><div class="tabs__content" data-gtm="tab" id="f636458b_236"   data-title="HTTP Request" ><div class="code-block" data-lang="http"    data-title="HTTP"   data-disable-link-processing="true"  >GET https://sellingpartnerapi-eu.amazon.com/definitions/2020-09-01/productTypes/&lt;product type&gt;
+    ?marketplaceIds=&lt;marketplace ids&gt;
+    &amp;productTypeVersion=&lt;product type version&gt;
+    &amp;requirements=&lt;requirements&gt;
+    &amp;requirementsEnforced=&lt;requirements enforced&gt;
+x-amz-access-token: &lt;access token&gt;
+</div><div class="table-wrapper" ><table class="left_header wide" id="f636458b_238"  ><thead><tr class="ijRowHead" id="f636458b_239"><th id="f636458b_240"><p><b id="f636458b_241">Type</b></p></th><th id="f636458b_242"><p><b id="f636458b_243">Param</b></p></th><th id="f636458b_244"><p><b id="f636458b_245">Description</b></p></th><th id="f636458b_246"><p><b id="f636458b_247">Required</b></p></th><th id="f636458b_248"><p><b id="f636458b_249">Values</b></p></th></tr></thead><tbody ><tr id="f636458b_250"><th id="f636458b_251"><p><b id="f636458b_252">Path</b></p></th><td id="f636458b_253"><p>productType</p></td><td id="f636458b_254"><p>The Amazon product type name.</p></td><td id="f636458b_255"><p><b id="f636458b_256">Yes</b></p></td></tr><tr id="f636458b_257"><th id="f636458b_258"><p><b id="f636458b_259">Query</b></p></th><td id="f636458b_260"><p>productTypeVersion</p></td><td id="f636458b_261"><p>The version of the Amazon product type to retrieve. Defaults to &quot;LATEST&quot;.</p></td><td id="f636458b_262"><p><b id="f636458b_263">No</b></p></td></tr><tr id="f636458b_264"><th id="f636458b_265"><p><b id="f636458b_266">Query</b></p></th><td id="f636458b_267"><p>requirements</p></td><td id="f636458b_268"><p>The name of the requirements set to retrieve requirements for.</p></td><td id="f636458b_269"><p><b id="f636458b_270">No</b></p></td><td id="f636458b_271"><p><a href="https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api-v2020-09-01-reference#requirements-subgroup-2" id="f636458b_272"   data-external="true" rel="noopener noreferrer" >Here</a></p></td></tr><tr id="f636458b_273"><th id="f636458b_274"><p><b id="f636458b_275">Query</b></p></th><td id="f636458b_276"><p>requirementsEnforced</p></td><td id="f636458b_277"><p>Identifies if the required attributes for a requirements set are enforced by the product type definition schema.</p></td><td id="f636458b_278"><p><b id="f636458b_279">No</b></p></td><td id="f636458b_280"><p><a href="https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api-v2020-09-01-reference#requirementsenforced" id="f636458b_281"   data-external="true" rel="noopener noreferrer" >Here</a></p></td></tr></tbody ></table ></div><aside class="prompt" data-type="tip" data-title="" id="f636458b_282"><p>To see all params visit <b id="f636458b_283"><a href="https://developer-docs.amazon.com/sp-api/docs/product-type-definitions-api-v2020-09-01-reference#parameters-1" id="f636458b_284"   data-external="true" rel="noopener noreferrer" >here</a></b></p></aside><br><aside class="prompt" data-type="tip" data-title="" id="f636458b_286"><p>To see all marketplace ids visit <b id="f636458b_287"><a href="https://developer-docs.amazon.com/sp-api/docs/marketplace-ids" id="f636458b_288"   data-external="true" rel="noopener noreferrer" >here</a></b></p></aside></div><div class="tabs__content" data-gtm="tab" id="f636458b_289"   data-title="Response (200)" ><div class="code-block" data-lang="json"    data-title="JSON"   data-disable-link-processing="true"  >{
+  &quot;metaSchema&quot;: {
+    &quot;link&quot;: {
+      &quot;resource&quot;: &quot;https://selling-partner-definitions-prod-dub.s3.eu-west-1.amazonaws.com/schema/amazon-product-type-definition-meta-schema-v1.json/...&quot;,
+      &quot;verb&quot;: &quot;GET&quot;
+    },
+    &quot;checksum&quot;: &quot;rZ/2Yep0np022S38ZdEiNQ==&quot;
+  },
+  &quot;schema&quot;: {
+    &quot;link&quot;: {
+      &quot;resource&quot;: &quot;https://selling-partner-definitions-prod-dub.s3.eu-west-1.amazonaws.com/schema/SPORTING_GOODS.json/...&quot;,
+      &quot;verb&quot;: &quot;GET&quot;
+    },
+    &quot;checksum&quot;: &quot;AnLxfteRP20zLFhlJIxgJQ==&quot;
+  },
+  &quot;requirements&quot;: &quot;LISTING_OFFER_ONLY&quot;,
+  &quot;requirementsEnforced&quot;: &quot;ENFORCED&quot;,
+  &quot;propertyGroups&quot;: {
+    &quot;offer&quot;: {
+      &quot;title&quot;: &quot;Angebot&quot;,
+      &quot;description&quot;: &quot;Produktangebot&quot;,
+      &quot;propertyNames&quot;: [
+        &quot;skip_offer&quot;,
+        &quot;fulfillment_availability&quot;,
+        &quot;map_policy&quot;,
+        &quot;purchasable_offer&quot;,
+        &quot;condition_type&quot;,
+        &quot;condition_note&quot;,
+        &quot;product_tax_code&quot;,
+        &quot;merchant_release_date&quot;,
+        &quot;merchant_shipping_group&quot;,
+        &quot;max_order_quantity&quot;,
+        &quot;gift_options&quot;,
+        &quot;uvp_list_price&quot;,
+        &quot;main_offer_image_locator&quot;,
+        &quot;other_offer_image_locator_1&quot;,
+        &quot;other_offer_image_locator_2&quot;,
+        &quot;other_offer_image_locator_3&quot;,
+        &quot;other_offer_image_locator_4&quot;,
+        &quot;other_offer_image_locator_5&quot;
+      ]
+    },
+    &quot;shipping&quot;: {
+      &quot;title&quot;: &quot;Versand&quot;,
+      &quot;description&quot;: &quot;Versand&quot;,
+      &quot;propertyNames&quot;: [
+        &quot;item_dimensions&quot;
+      ]
+    },
+    &quot;safety_and_compliance&quot;: {
+      &quot;title&quot;: &quot;Sicherheit und Einhaltung von Regeln&quot;,
+      &quot;description&quot;: &quot;Sicherheit und Einhaltung von Regeln&quot;,
+      &quot;propertyNames&quot;: [
+        &quot;country_of_origin&quot;,
+        &quot;batteries_required&quot;,
+        &quot;batteries_included&quot;,
+        &quot;battery&quot;,
+        &quot;num_batteries&quot;,
+        &quot;number_of_lithium_metal_cells&quot;,
+        &quot;number_of_lithium_ion_cells&quot;,
+        &quot;lithium_battery&quot;,
+        &quot;supplier_declared_dg_hz_regulation&quot;,
+        &quot;ghs&quot;,
+        &quot;contains_liquid_contents&quot;,
+        &quot;liquid_volume&quot;,
+        &quot;hazmat&quot;,
+        &quot;safety_data_sheet_url&quot;,
+        &quot;item_weight&quot;,
+        &quot;eu_toys_safety_directive_age_warning&quot;,
+        &quot;eu_toys_safety_directive_warning&quot;
+      ]
+    },
+    &quot;product_identity&quot;: {
+      &quot;title&quot;: &quot;Produktidentit&auml;t&quot;,
+      &quot;description&quot;: &quot;Produktidentit&auml;t&quot;,
+      &quot;propertyNames&quot;: [
+        &quot;externally_assigned_product_identifier&quot;,
+        &quot;merchant_suggested_asin&quot;
+      ]
+    },
+    &quot;product_details&quot;: {
+      &quot;title&quot;: &quot;Produktdetails&quot;,
+      &quot;description&quot;: &quot;Produktdetails&quot;,
+      &quot;propertyNames&quot;: [
+        &quot;power_plug_type&quot;,
+        &quot;accepted_voltage_frequency&quot;,
+        &quot;product_site_launch_date&quot;
+      ]
+    }
+  },
+  &quot;locale&quot;: &quot;de_DE&quot;,
+  &quot;marketplaceIds&quot;: [
+    &quot;A1PA6795UKMFR9&quot;
+  ],
+  &quot;productType&quot;: &quot;SPORTING_GOODS&quot;,
+  &quot;displayName&quot;: &quot;SPORTING_GOODS&quot;,
+  &quot;productTypeVersion&quot;: {
+    &quot;version&quot;: &quot;UAAAAAAAAAAAAAAAAlYD2t464-0LOd_CbNrgavYPLlKSG&quot;,
+    &quot;latest&quot;: true,
+    &quot;releaseCandidate&quot;: false
+  }
+}</div></div><div class="tabs__content" data-gtm="tab" id="f636458b_291"   data-title="Response (404)" ><div class="code-block" data-lang="json"    data-title="JSON"   data-disable-link-processing="true"  >{
+  &quot;errors&quot;: [
+    {
+      &quot;code&quot;: &quot;NOT_FOUND&quot;,
+      &quot;message&quot;: &quot;Product type not found for marketplace: ...&quot;
+    }
+  ]
+}</div></div></div><div class="last-modified"> Last modified: 12 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="search-item.html">Search item</a>   <a class="navigation-links__next" href="type-definition.html">Get product type definition</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

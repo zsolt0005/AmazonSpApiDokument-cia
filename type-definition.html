@@ -1,0 +1,4506 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-12T09:34:41.4887602"><meta name="build-number" content="${buildNumber}">       <title>Get product type definition | Amazon</title><script id="virtual-toc-data" type="application/json">[]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Get product type definition | Amazon"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="Amazon Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="/amazon/1.0.0/type-definition.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Get product type definition | Amazon"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "/amazon/1.0.0/type-definition.html#webpage", "url": "/amazon/1.0.0/type-definition.html", "name": "Get product type definition | Amazon", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/amazon/#website", "url": "/amazon/", "name": "Amazon Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="Type-definition" data-main-title="Get product type definition" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="Api.md|Api///Product-type.md|Product type"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Amazon 1.0.0 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Type-definition"  id="Type-definition.md"  >Get product type definition</h1>  <div class="tabs" id="fedd3886_84"><div class="tabs__content" data-gtm="tab" id="fedd3886_85"   data-title="HTTP Request" ><p>Request sa odosiela na URL z response na request <a href="product-type.html" id="fedd3886_86" data-tooltip="Product type Type Param Description Required Values Path productType The Amazon product type name. Yes Query productTypeVersion The version of the Amazon product type to retrieve. Defaults to &quot;LATEST&quot;. No Query requirements The name of the requirements set to retrieve requirements&hellip;"  >Product type</a>. V response n&aacute;jdeme nasledovn&yacute; <b id="fedd3886_87">PATH</b> v JSON <code class="code" id="fedd3886_88">schema -&gt; link -&gt; resource</code></p></div><div class="tabs__content" data-gtm="tab" id="fedd3886_89"   data-title="Response (200)" ><div class="code-block" data-lang="json"    data-title="JSON"   data-disable-link-processing="true"  >{
+  &quot;$schema&quot;: &quot;https://schemas.amazon.com/selling-partners/definitions/product-types/meta-schema/v1&quot;,
+  &quot;$id&quot;: &quot;https://schemas.amazon.com/selling-partners/definitions/product-types/schema/v1/SPORTING_GOODS&quot;,
+  &quot;$comment&quot;: &quot;Amazon product type definition for SPORTING_GOODS product type&quot;,
+  &quot;$defs&quot;: {
+    &quot;marketplace_id&quot;: {
+      &quot;default&quot;: &quot;A1PA6795UKMFR9&quot;,
+      &quot;editable&quot;: false,
+      &quot;hidden&quot;: true,
+      &quot;examples&quot;: [
+        &quot;Amazon.de&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;enum&quot;: [
+            &quot;A1PA6795UKMFR9&quot;
+          ],
+          &quot;enumNames&quot;: [
+            &quot;Amazon.de&quot;
+          ]
+        }
+      ]
+    },
+    &quot;language_tag&quot;: {
+      &quot;default&quot;: &quot;de_DE&quot;,
+      &quot;editable&quot;: false,
+      &quot;hidden&quot;: true,
+      &quot;examples&quot;: [
+        &quot;Deutsch (Deutschland)&quot;
+      ],
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;anyOf&quot;: [
+        {
+          &quot;type&quot;: &quot;string&quot;
+        },
+        {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;enum&quot;: [
+            &quot;de_DE&quot;
+          ],
+          &quot;enumNames&quot;: [
+            &quot;Deutsch (Deutschland)&quot;
+          ]
+        }
+      ]
+    }
+  },
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;required&quot;: [],
+  &quot;properties&quot;: {
+    &quot;externally_assigned_product_identifier&quot;: {
+      &quot;title&quot;: &quot;Externe Produkt-ID&quot;,
+      &quot;description&quot;: &quot;Geben Sie die externe Produkt-ID f&uuml;r diesen Artikel an&quot;,
+      &quot;examples&quot;: [
+        &quot;714532191586&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;type&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;type&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;type&quot;: {
+            &quot;title&quot;: &quot;Art der externen Produkt-ID&quot;,
+            &quot;description&quot;: &quot;Art der externen ID (Barcode) ausw&auml;hlen, mit der das Produkt identifiziert wird&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;UPC, EAN, GTIN&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;ean&quot;,
+              &quot;gtin&quot;,
+              &quot;pzn&quot;,
+              &quot;upc&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;EAN&quot;,
+              &quot;GTIN&quot;,
+              &quot;PZN&quot;,
+              &quot;UPC&quot;
+            ]
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Externe Produkt-ID&quot;,
+            &quot;description&quot;: &quot;Geben Sie den Wert der zugeh&ouml;rigen externen Produkt-ID f&uuml;r die Art an, die ausgew&auml;hlt wurde&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;714532191586&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;merchant_suggested_asin&quot;: {
+      &quot;title&quot;: &quot;Empfohlene ASIN des H&auml;ndlers&quot;,
+      &quot;description&quot;: &quot;Vorgeschlagene ASIN f&uuml;r das Produkt angeben&quot;,
+      &quot;examples&quot;: [
+        &quot;B007KQBXN0&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;value&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Empfohlene ASIN des H&auml;ndlers&quot;,
+            &quot;description&quot;: &quot;Geben Sie die entsprechende ASIN ID, falls das zu listende Produkt bereits auf Amazon gelistet ist&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;B007KQBXN0&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;minLength&quot;: 10,
+            &quot;maxLength&quot;: 10,
+            &quot;maxUtf8ByteLength&quot;: 40
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;skip_offer&quot;: {
+      &quot;title&quot;: &quot;Angebot &uuml;berspringen&quot;,
+      &quot;description&quot;: &quot;Bitte geben Sie an, ob das Angebot &uuml;bersprungen und kein Kaufangebot erstellt werden soll.  Ein Wert von &bdquo;true&ldquo; bedeutet, dass kein Angebot erstellt wird.&quot;,
+      &quot;examples&quot;: [
+        &quot;Wahr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Angebot &uuml;berspringen&quot;,
+            &quot;description&quot;: &quot;Bitte geben Sie an, ob das Angebot &uuml;bersprungen und kein Kaufangebot erstellt werden soll.  Ein Wert von &bdquo;true&ldquo; bedeutet, dass kein Angebot erstellt wird.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Wahr&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Ja&quot;,
+              &quot;Nein&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;fulfillment_availability&quot;: {
+      &quot;title&quot;: &quot;Verf&uuml;gbarkeit f&uuml;r das Fulfillment&quot;,
+      &quot;description&quot;: &quot;F&uuml;r H&auml;ndler, die Amazon Fulfillment-Dienste nutzen, geben Sie bitte entsprechende logistische Informationen an.&quot;,
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;fulfillment_channel_code&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;fulfillment_channel_code&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;fulfillment_channel_code&quot;: {
+            &quot;title&quot;: &quot;Fulfillment-Channel-Code&quot;,
+            &quot;description&quot;: &quot;F&uuml;r H&auml;ndler, die Amazon Fulfillment-Dienste nutzen, ist damit festgelegt, welches Fulfillment-Netzwerk verwendet wird. Wenn Sie einen anderen Wert als DEFAULT angeben, wird das vom H&auml;ndler ausgef&uuml;llte Angebot storniert. F&uuml;ir vom H&auml;ndler ausgef&uuml;llte Produkte sollten dieses Feld leer bleiben.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;AMAZON_NA&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;AMAZON_EU&quot;,
+              &quot;DEFAULT&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;AMAZON_EU&quot;,
+              &quot;DEFAULT&quot;
+            ]
+          },
+          &quot;quantity&quot;: {
+            &quot;title&quot;: &quot;Menge&quot;,
+            &quot;description&quot;: &quot;Geben Sie die Menge des Artikels ein, den Sie zum Verkauf anbieten. Dies ist Ihre aktuelle Bestandsverpflichtung (als Gesamtzahl)&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;152&quot;
+            ],
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;minimum&quot;: 0
+          },
+          &quot;lead_time_to_ship_max_days&quot;: {
+            &quot;title&quot;: &quot;Bearbeitungszeit&quot;,
+            &quot;description&quot;: &quot;Geben Sie die Zeit in Tagen an, die zwischen dem Eingang einer Bestellung f&uuml;r einen Artikel und dem Versand des Artikels liegt&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;5&quot;
+            ],
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;maximum&quot;: 30
+          },
+          &quot;restock_date&quot;: {
+            &quot;title&quot;: &quot;Auff&uuml;lldatum&quot;,
+            &quot;description&quot;: &quot;Datum, an dem das Produkt wieder auf Lager ist&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;2020-05-05&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;oneOf&quot;: [
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;date&quot;
+              },
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;date-time&quot;
+              }
+            ]
+          },
+          &quot;is_inventory_available&quot;: {
+            &quot;title&quot;: &quot;Immer verf&uuml;gbarer Bestand&quot;,
+            &quot;description&quot;: &quot;Immer verf&uuml;gbarer Bestand ist eine Alternative zur Menge, die es erm&ouml;glicht, dass der Bestand nie aufgebraucht wird. Diese Funktion kann durch Aktivieren oder Deaktivieren ein- oder ausgeschaltet werden. Beachten Sie, dass eine Menge nicht angegeben werden kann, wenn diese angegeben wird.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Deaktiviert&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Aktiviert&quot;,
+              &quot;Deaktiviert&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;map_policy&quot;: {
+      &quot;title&quot;: &quot;Anzeige des beworbenen Mindestpreises&quot;,
+      &quot;description&quot;: &quot;W&auml;hlen Sie eins aus.&quot;,
+      &quot;examples&quot;: [
+        &quot;Richtlinie 9&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Anzeige des beworbenen Mindestpreises&quot;,
+            &quot;description&quot;: &quot;W&auml;hlen Sie eins aus.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Richtlinie 9&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;policy_1&quot;,
+              &quot;policy_10&quot;,
+              &quot;policy_11&quot;,
+              &quot;policy_2&quot;,
+              &quot;policy_3&quot;,
+              &quot;policy_4&quot;,
+              &quot;policy_5&quot;,
+              &quot;policy_6&quot;,
+              &quot;policy_7&quot;,
+              &quot;policy_8&quot;,
+              &quot;policy_9&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Policy 1&quot;,
+              &quot;Policy 10&quot;,
+              &quot;Policy 11&quot;,
+              &quot;Policy 2&quot;,
+              &quot;Policy 3&quot;,
+              &quot;Policy 4&quot;,
+              &quot;Policy 5&quot;,
+              &quot;Policy 6&quot;,
+              &quot;Policy 7&quot;,
+              &quot;Policy 8&quot;,
+              &quot;Policy 9&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;purchasable_offer&quot;: {
+      &quot;title&quot;: &quot;K&auml;ufliches Angebot&quot;,
+      &quot;description&quot;: &quot;Geben Sie Informationen zu k&auml;uflichen Angeboten an.&quot;,
+      &quot;examples&quot;: [
+        &quot;EUR&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;currency&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;currency&quot;,
+          &quot;marketplace_id&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;currency&quot;: {
+            &quot;title&quot;: &quot;W&auml;hrung&quot;,
+            &quot;description&quot;: &quot;Entsprechende W&auml;hrung ausw&auml;hlen&quot;,
+            &quot;default&quot;: &quot;EUR&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;EUR&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;anyOf&quot;: [
+              {
+                &quot;type&quot;: &quot;string&quot;
+              },
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [
+                  &quot;EUR&quot;
+                ],
+                &quot;enumNames&quot;: [
+                  &quot;EUR&quot;
+                ]
+              }
+            ]
+          },
+          &quot;discounted_price&quot;: {
+            &quot;title&quot;: &quot;Kaufangebot Rabattpreis&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt den reduzierten Kaufpreis f&uuml;r das k&auml;ufliche Angebot des Produkts an&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;schedule&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;schedule&quot;: {
+                  &quot;title&quot;: &quot;Kaufangebot Discounted Price Schedule&quot;,
+                  &quot;description&quot;: &quot;Das Merkmal gibt den Preisrabatt f&uuml;r das k&auml;ufliche Produktangebot an&quot;,
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;minItems&quot;: 1,
+                  &quot;items&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;required&quot;: [
+                      &quot;end_at&quot;,
+                      &quot;start_at&quot;,
+                      &quot;value_with_tax&quot;
+                    ],
+                    &quot;properties&quot;: {
+                      &quot;end_at&quot;: {
+                        &quot;title&quot;: &quot;Enddatum f&uuml;r den Angebotspreis&quot;,
+                        &quot;description&quot;: &quot;Das letzte Datum, an dem der Verkaufspreis den Standardpreis des Artikels &uuml;berschreibt; der Standardpreis des Produkts wird nach 0:00 Uhr des Verkaufsendtages angezeigt.&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;2017-07-01&quot;
+                        ],
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;oneOf&quot;: [
+                          {
+                            &quot;type&quot;: &quot;string&quot;,
+                            &quot;format&quot;: &quot;date&quot;
+                          },
+                          {
+                            &quot;type&quot;: &quot;string&quot;,
+                            &quot;format&quot;: &quot;date-time&quot;
+                          }
+                        ]
+                      },
+                      &quot;start_at&quot;: {
+                        &quot;title&quot;: &quot;Startdatum f&uuml;r den Angebotspreis&quot;,
+                        &quot;description&quot;: &quot;Das Datum, an dem der Verkaufspreis beginnt, den Standardpreis des Produkts zu &uuml;berschreiben; der Verkaufspreis wird nach 0:00 Uhr des Verkaufsdatums angezeigt.&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;2017-06-30&quot;
+                        ],
+                        &quot;type&quot;: &quot;string&quot;,
+                        &quot;oneOf&quot;: [
+                          {
+                            &quot;type&quot;: &quot;string&quot;,
+                            &quot;format&quot;: &quot;date&quot;
+                          },
+                          {
+                            &quot;type&quot;: &quot;string&quot;,
+                            &quot;format&quot;: &quot;date-time&quot;
+                          }
+                        ]
+                      },
+                      &quot;value_with_tax&quot;: {
+                        &quot;title&quot;: &quot;Angebotspreis&quot;,
+                        &quot;description&quot;: &quot;Der Preis, zu dem Sie das Produkt zum Verkauf anbieten.&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;219.99&quot;
+                        ],
+                        &quot;type&quot;: &quot;number&quot;
+                      }
+                    },
+                    &quot;additionalProperties&quot;: false
+                  }
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;end_at&quot;: {
+            &quot;title&quot;: &quot;Kaufangebot endet um&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt das k&auml;ufliche Angebot bei Auslauf des Produkts an&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {
+              &quot;value&quot;: {
+                &quot;title&quot;: &quot;Datum des Verkaufsendes&quot;,
+                &quot;description&quot;: &quot;Enddatum f&uuml;r Ihren Preis&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;2017-07-01&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;oneOf&quot;: [
+                  {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;format&quot;: &quot;date&quot;
+                  },
+                  {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;format&quot;: &quot;date-time&quot;
+                  }
+                ]
+              }
+            },
+            &quot;additionalProperties&quot;: false
+          },
+          &quot;map_price&quot;: {
+            &quot;title&quot;: &quot;K&auml;ufliches Angebot Kartenpreis&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt den Kartenpreis des Produkts f&uuml;r das Kaufangebot an&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [],
+              &quot;properties&quot;: {
+                &quot;schedule&quot;: {
+                  &quot;title&quot;: &quot;Preisliste f&uuml;r k&auml;ufliche Angebotskarten&quot;,
+                  &quot;description&quot;: &quot;Das Merkmal gibt die Liste der minimal zul&auml;ssigen Verkaufspreise f&uuml;r das k&auml;ufliche Angebot des Produkts an&quot;,
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;minItems&quot;: 1,
+                  &quot;items&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;required&quot;: [],
+                    &quot;properties&quot;: {
+                      &quot;value_with_tax&quot;: {
+                        &quot;title&quot;: &quot;Minimaler angezeigter Preis&quot;,
+                        &quot;description&quot;: &quot;Geben Sie den beworbenen Mindestpreis an&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;259.99&quot;
+                        ],
+                        &quot;type&quot;: &quot;number&quot;
+                      }
+                    },
+                    &quot;additionalProperties&quot;: false
+                  }
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;maximum_seller_allowed_price&quot;: {
+            &quot;title&quot;: &quot;Kaufangebot Maximaler Verk&auml;ufer Zul&auml;ssiger Preis&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt den maximal zul&auml;ssigen Verkaufspreis f&uuml;r das k&auml;ufliche Angebot des Produkts an&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [],
+              &quot;properties&quot;: {
+                &quot;schedule&quot;: {
+                  &quot;title&quot;: &quot;Kaufangebot Maximaler Verk&auml;ufer Zul&auml;ssiger Preisplan&quot;,
+                  &quot;description&quot;: &quot;Das Attribut gibt den vom Verk&auml;ufer maximal zul&auml;ssigen Angebotspreis des Produkts an&quot;,
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;minItems&quot;: 1,
+                  &quot;items&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;required&quot;: [],
+                    &quot;properties&quot;: {
+                      &quot;value_with_tax&quot;: {
+                        &quot;title&quot;: &quot;Maximaler Verk&auml;uferpreis&quot;,
+                        &quot;description&quot;: &quot;Geben Sie den maximal zul&auml;ssigen Verk&auml;uferpreis an&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;259.99&quot;
+                        ],
+                        &quot;type&quot;: &quot;number&quot;
+                      }
+                    },
+                    &quot;additionalProperties&quot;: false
+                  }
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;minimum_seller_allowed_price&quot;: {
+            &quot;title&quot;: &quot;Kaufangebot Mindestpreis des Verk&auml;ufers&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt den Mindestverkaufspreis f&uuml;r das k&auml;ufliche Angebot des Produktes an&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [],
+              &quot;properties&quot;: {
+                &quot;schedule&quot;: {
+                  &quot;title&quot;: &quot;Kaufangebot Mindestverk&auml;ufer Zul&auml;ssiger Preisplan&quot;,
+                  &quot;description&quot;: &quot;Das Merkmal gibt die Liste der zul&auml;ssigen Mindestverkaufspreise f&uuml;r das k&auml;ufliche Produktangebot an&quot;,
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;minItems&quot;: 1,
+                  &quot;items&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;required&quot;: [],
+                    &quot;properties&quot;: {
+                      &quot;value_with_tax&quot;: {
+                        &quot;title&quot;: &quot;Zul&auml;ssiger Mindestpreis f&uuml;r Verk&auml;ufer&quot;,
+                        &quot;description&quot;: &quot;Geben Sie den zul&auml;ssigen vom K&auml;ufer festgelegten Mindestpreis an&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;259.99&quot;
+                        ],
+                        &quot;type&quot;: &quot;number&quot;
+                      }
+                    },
+                    &quot;additionalProperties&quot;: false
+                  }
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;our_price&quot;: {
+            &quot;title&quot;: &quot;Kaufangebot Unser Preis&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt unsere Preise f&uuml;r das k&auml;ufliche Angebot des Produkts an&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;schedule&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;schedule&quot;: {
+                  &quot;title&quot;: &quot;Kaufangebot Unsere Preisliste&quot;,
+                  &quot;description&quot;: &quot;Das Merkmal gibt das k&auml;ufliche Angebot laut unserer Preisliste f&uuml;r das Produkt an&quot;,
+                  &quot;type&quot;: &quot;array&quot;,
+                  &quot;minItems&quot;: 1,
+                  &quot;items&quot;: {
+                    &quot;type&quot;: &quot;object&quot;,
+                    &quot;required&quot;: [
+                      &quot;value_with_tax&quot;
+                    ],
+                    &quot;properties&quot;: {
+                      &quot;value_with_tax&quot;: {
+                        &quot;title&quot;: &quot;Ihr Preis&quot;,
+                        &quot;description&quot;: &quot;Geben Sie den Grundpreis eines Artikels an&quot;,
+                        &quot;editable&quot;: true,
+                        &quot;hidden&quot;: false,
+                        &quot;examples&quot;: [
+                          &quot;50,00&quot;
+                        ],
+                        &quot;type&quot;: &quot;number&quot;
+                      }
+                    },
+                    &quot;additionalProperties&quot;: false
+                  }
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;start_at&quot;: {
+            &quot;title&quot;: &quot;Kaufangebot ab&quot;,
+            &quot;description&quot;: &quot;Das Merkmal gibt den Verkaufsbeginn des k&auml;uflichen Produktangebots an&quot;,
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;required&quot;: [],
+            &quot;properties&quot;: {
+              &quot;value&quot;: {
+                &quot;title&quot;: &quot;Erscheinungsdatum des Angebots&quot;,
+                &quot;description&quot;: &quot;Beginndatum f&uuml;r Ihren Preis&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;2017-06-30&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;oneOf&quot;: [
+                  {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;format&quot;: &quot;date&quot;
+                  },
+                  {
+                    &quot;type&quot;: &quot;string&quot;,
+                    &quot;format&quot;: &quot;date-time&quot;
+                  }
+                ]
+              }
+            },
+            &quot;additionalProperties&quot;: false
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;condition_type&quot;: {
+      &quot;title&quot;: &quot;Typisch der Angebotsbedingung&quot;,
+      &quot;description&quot;: &quot;Bereitstellung der tats&auml;chlichen Konditionsart des Produkts&quot;,
+      &quot;examples&quot;: [
+        &quot;Neu neu&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Typisch der Angebotsbedingung&quot;,
+            &quot;description&quot;: &quot;Bereitstellung der tats&auml;chlichen Konditionsart des Produkts&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Neu neu&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;club_club&quot;,
+              &quot;used_acceptable&quot;,
+              &quot;used_good&quot;,
+              &quot;used_very_good&quot;,
+              &quot;used_like_new&quot;,
+              &quot;refurbished_refurbished&quot;,
+              &quot;new_new&quot;,
+              &quot;new_open_box&quot;,
+              &quot;new_oem&quot;,
+              &quot;collectible_acceptable&quot;,
+              &quot;collectible_good&quot;,
+              &quot;collectible_very_good&quot;,
+              &quot;collectible_like_new&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Club&quot;,
+              &quot;Gebraucht - Akzeptabel&quot;,
+              &quot;Gebraucht - Gut&quot;,
+              &quot;Gebraucht - Sehr gut&quot;,
+              &quot;Gebraucht - Wie neu&quot;,
+              &quot;General&uuml;berholt&quot;,
+              &quot;Neu&quot;,
+              &quot;Neu - Ge&ouml;ffnete Verpackung&quot;,
+              &quot;Neu - OEM&quot;,
+              &quot;Sammlerst&uuml;ck - Akzeptabel&quot;,
+              &quot;Sammlerst&uuml;ck - Gut&quot;,
+              &quot;Sammlerst&uuml;ck - Sehr gut&quot;,
+              &quot;Sammlerst&uuml;ck - wie neu&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;condition_note&quot;: {
+      &quot;title&quot;: &quot;Angebotsbedingung Anmerkung&quot;,
+      &quot;description&quot;: &quot;Stellen Sie einen beschreibenden Text bereit, der den tats&auml;chlichen Zustand des Artikels darlegt&quot;,
+      &quot;examples&quot;: [
+        &quot;Kleine Beule in der linken Seitenwand.&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;language_tag&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;language_tag&quot;,
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;language_tag&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/language_tag&quot;
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Vermerk zu den Angebotskonditionen&quot;,
+            &quot;description&quot;: &quot;Stellen Sie einen beschreibenden Text bereit, der den tats&auml;chlichen Zustand des Artikels darlegt&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Kleine Beule in der linken Seitenwand.&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;maxLength&quot;: 2204
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;product_tax_code&quot;: {
+      &quot;title&quot;: &quot;Steuerkennziffer f&uuml;r Produkte&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Steuerkennziffer f&uuml;r Produkte ein, die Ihnen von Amazon.com zur Verf&uuml;gung gestellt wird&quot;,
+      &quot;examples&quot;: [
+        &quot;A_GEN_NOTAX&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Steuerkennziffer f&uuml;r Produkte&quot;,
+            &quot;description&quot;: &quot;Geben Sie die Steuerkennziffer f&uuml;r Produkte ein, die Ihnen von Amazon.com zur Verf&uuml;gung gestellt wird&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;A_GEN_NOTAX&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;maxLength&quot;: 949
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;merchant_release_date&quot;: {
+      &quot;title&quot;: &quot;Freigabedatum des H&auml;ndlers&quot;,
+      &quot;description&quot;: &quot;Geben Sie das Freigabedatum des H&auml;ndlers im Format YYYYY-MM-DD an.&quot;,
+      &quot;examples&quot;: [
+        &quot;2017-07-20&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Freigabedatum des H&auml;ndlers&quot;,
+            &quot;description&quot;: &quot;Geben Sie das Freigabedatum des H&auml;ndlers im Format YYYYY-MM-DD an.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;2017-07-20&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;oneOf&quot;: [
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;date&quot;
+              },
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;date-time&quot;
+              }
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;merchant_shipping_group&quot;: {
+      &quot;title&quot;: &quot;Verk&auml;uferversandgruppe&quot;,
+      &quot;description&quot;: &quot;Eine bestimmte Gruppe von Versandeinstellungen, die verk&auml;uferspezifisch f&uuml;r ein Angebot festgelegt wird. Die Verk&auml;uferversandgruppe wird in der Benutzeroberfl&auml;che f&uuml;r Versandeinstellungen vom Verk&auml;ufer erstellt und verwaltet.&quot;,
+      &quot;examples&quot;: [
+        &quot;&Uuml;bergr&ouml;&szlig;en-/Sperrige Produkte, Deutschland DHL Inland&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;H&auml;ndlerversandgruppe&quot;,
+            &quot;description&quot;: &quot;Die Konfigurationsgruppe f&uuml;r den Versand f&uuml;r ein Angebot. Die Konfigurationsgruppe f&uuml;r den Versand wird vom Verk&auml;ufer &uuml;ber die Oberfl&auml;che f&uuml;r die Versandeinstellungen erstellt und verwaltet.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Schwere, sperrige Produkte, NCR-Gro&szlig;ger&auml;telieferung&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;maxLength&quot;: 100
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;max_order_quantity&quot;: {
+      &quot;title&quot;: &quot;Maximale Bestellmenge&quot;,
+      &quot;description&quot;: &quot;Geben Sie den Wert der maximalen Bestellmenge an&quot;,
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Max. Bestellmenge&quot;,
+            &quot;description&quot;: &quot;Geben Sie den Wert der maximalen Bestellmenge an&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;3&quot;
+            ],
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;minimum&quot;: 1
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;gift_options&quot;: {
+      &quot;title&quot;: &quot;Geschenkoptionen&quot;,
+      &quot;description&quot;: &quot;Geben Sie Optionen f&uuml;r Geschenkkarten an.&quot;,
+      &quot;examples&quot;: [
+        &quot;Ja&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;can_be_messaged&quot;: {
+            &quot;title&quot;: &quot;Das Angebot kann mit einer Geschenknachricht versehen werden&quot;,
+            &quot;description&quot;: &quot;Wenn Sie zus&auml;tzlich zum Artikel eine Geschenknachricht drucken k&ouml;nnen, geben Sie dies hier an.  Falls leer gelassen, ist die Standardeinstellung \&quot;false\&quot;&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;WAHR&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Ja&quot;,
+              &quot;Nein&quot;
+            ]
+          },
+          &quot;can_be_wrapped&quot;: {
+            &quot;title&quot;: &quot;Ist eine Geschenkverpackung verf&uuml;gbar?&quot;,
+            &quot;description&quot;: &quot;Wenn Sie einen Artikel in Geschenkverpackung einpacken k&ouml;nnen, geben Sie dies hier an.  Falls leer gelassen, ist die Standardeinstellung \&quot;nein\&quot;&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;WAHR&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Ja&quot;,
+              &quot;Nein&quot;
+            ]
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;uvp_list_price&quot;: {
+      &quot;title&quot;: &quot;Listenpreis (UVP)&quot;,
+      &quot;description&quot;: &quot;Listenpreis (UVP) des Produkts angeben&quot;,
+      &quot;examples&quot;: [
+        &quot;69.71&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;currency&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;currency&quot;,
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;currency&quot;: {
+            &quot;title&quot;: &quot;Listenpreis (UVP) &ndash; W&auml;hrung&quot;,
+            &quot;description&quot;: &quot;Entsprechende W&auml;hrung ausw&auml;hlen&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: true,
+            &quot;examples&quot;: [
+              &quot;USD&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;AED&quot;,
+              &quot;AFN&quot;,
+              &quot;ALL&quot;,
+              &quot;AMD&quot;,
+              &quot;ANG&quot;,
+              &quot;AOA&quot;,
+              &quot;ARS&quot;,
+              &quot;ATS&quot;,
+              &quot;AUD&quot;,
+              &quot;AWG&quot;,
+              &quot;AZN&quot;,
+              &quot;BAM&quot;,
+              &quot;BBD&quot;,
+              &quot;BDT&quot;,
+              &quot;BEF&quot;,
+              &quot;BGN&quot;,
+              &quot;BHD&quot;,
+              &quot;BIF&quot;,
+              &quot;BMD&quot;,
+              &quot;BND&quot;,
+              &quot;BOB&quot;,
+              &quot;BRL&quot;,
+              &quot;BSD&quot;,
+              &quot;BTN&quot;,
+              &quot;BWP&quot;,
+              &quot;BYN&quot;,
+              &quot;BYR&quot;,
+              &quot;BZD&quot;,
+              &quot;CAD&quot;,
+              &quot;CDF&quot;,
+              &quot;CHF&quot;,
+              &quot;CLP&quot;,
+              &quot;CNY&quot;,
+              &quot;COP&quot;,
+              &quot;CRC&quot;,
+              &quot;CSD&quot;,
+              &quot;CUP&quot;,
+              &quot;CVE&quot;,
+              &quot;CZK&quot;,
+              &quot;DEM&quot;,
+              &quot;DJF&quot;,
+              &quot;DKK&quot;,
+              &quot;DOP&quot;,
+              &quot;DZD&quot;,
+              &quot;EEK&quot;,
+              &quot;EGP&quot;,
+              &quot;ERN&quot;,
+              &quot;ESP&quot;,
+              &quot;ETB&quot;,
+              &quot;EUR&quot;,
+              &quot;FIM&quot;,
+              &quot;FJD&quot;,
+              &quot;FKP&quot;,
+              &quot;FRF&quot;,
+              &quot;GBP&quot;,
+              &quot;GEL&quot;,
+              &quot;GGP&quot;,
+              &quot;GHS&quot;,
+              &quot;GIP&quot;,
+              &quot;GMD&quot;,
+              &quot;GNF&quot;,
+              &quot;GRD&quot;,
+              &quot;GTQ&quot;,
+              &quot;GYD&quot;,
+              &quot;HKD&quot;,
+              &quot;HNL&quot;,
+              &quot;HRK&quot;,
+              &quot;HTG&quot;,
+              &quot;HUF&quot;,
+              &quot;IDR&quot;,
+              &quot;ILS&quot;,
+              &quot;IMP&quot;,
+              &quot;INR&quot;,
+              &quot;IQD&quot;,
+              &quot;IRR&quot;,
+              &quot;ISK&quot;,
+              &quot;ITL&quot;,
+              &quot;JEP&quot;,
+              &quot;JMD&quot;,
+              &quot;JOD&quot;,
+              &quot;JPY&quot;,
+              &quot;KES&quot;,
+              &quot;KGS&quot;,
+              &quot;KHR&quot;,
+              &quot;KMF&quot;,
+              &quot;KPW&quot;,
+              &quot;KRW&quot;,
+              &quot;KWD&quot;,
+              &quot;KYD&quot;,
+              &quot;KZT&quot;,
+              &quot;LAK&quot;,
+              &quot;LBP&quot;,
+              &quot;LKR&quot;,
+              &quot;LRD&quot;,
+              &quot;LSL&quot;,
+              &quot;LTL&quot;,
+              &quot;LUF&quot;,
+              &quot;LVL&quot;,
+              &quot;LYD&quot;,
+              &quot;MAD&quot;,
+              &quot;MDL&quot;,
+              &quot;MGA&quot;,
+              &quot;MKD&quot;,
+              &quot;MMK&quot;,
+              &quot;MNT&quot;,
+              &quot;MOP&quot;,
+              &quot;MRU&quot;,
+              &quot;MUR&quot;,
+              &quot;MVR&quot;,
+              &quot;MWK&quot;,
+              &quot;MXN&quot;,
+              &quot;MYR&quot;,
+              &quot;MZN&quot;,
+              &quot;NAD&quot;,
+              &quot;NGN&quot;,
+              &quot;NIO&quot;,
+              &quot;NOK&quot;,
+              &quot;NPR&quot;,
+              &quot;NZD&quot;,
+              &quot;OMR&quot;,
+              &quot;PAB&quot;,
+              &quot;PEN&quot;,
+              &quot;PGK&quot;,
+              &quot;PHP&quot;,
+              &quot;PKR&quot;,
+              &quot;PLN&quot;,
+              &quot;PTE&quot;,
+              &quot;PYG&quot;,
+              &quot;QAR&quot;,
+              &quot;RON&quot;,
+              &quot;RSD&quot;,
+              &quot;RUB&quot;,
+              &quot;RWF&quot;,
+              &quot;SAR&quot;,
+              &quot;SBD&quot;,
+              &quot;SCR&quot;,
+              &quot;SDG&quot;,
+              &quot;SEK&quot;,
+              &quot;SGD&quot;,
+              &quot;SHP&quot;,
+              &quot;SKK&quot;,
+              &quot;SLL&quot;,
+              &quot;SOS&quot;,
+              &quot;SRD&quot;,
+              &quot;SSP&quot;,
+              &quot;STN&quot;,
+              &quot;SVC&quot;,
+              &quot;SYP&quot;,
+              &quot;SZL&quot;,
+              &quot;THB&quot;,
+              &quot;TJS&quot;,
+              &quot;TMT&quot;,
+              &quot;TND&quot;,
+              &quot;TOP&quot;,
+              &quot;TRY&quot;,
+              &quot;TTD&quot;,
+              &quot;TWD&quot;,
+              &quot;TZS&quot;,
+              &quot;UAH&quot;,
+              &quot;UGX&quot;,
+              &quot;USD&quot;,
+              &quot;UYU&quot;,
+              &quot;UZS&quot;,
+              &quot;VEF&quot;,
+              &quot;VES&quot;,
+              &quot;VND&quot;,
+              &quot;VUV&quot;,
+              &quot;WST&quot;,
+              &quot;XAF&quot;,
+              &quot;XCD&quot;,
+              &quot;XOF&quot;,
+              &quot;XPF&quot;,
+              &quot;YER&quot;,
+              &quot;ZAR&quot;,
+              &quot;ZMW&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;AED&quot;,
+              &quot;AFN&quot;,
+              &quot;ALL&quot;,
+              &quot;AMD&quot;,
+              &quot;ANG&quot;,
+              &quot;AOA&quot;,
+              &quot;ARS&quot;,
+              &quot;ATS&quot;,
+              &quot;AUD&quot;,
+              &quot;AWG&quot;,
+              &quot;AZN&quot;,
+              &quot;BAM&quot;,
+              &quot;BBD&quot;,
+              &quot;BDT&quot;,
+              &quot;BEF&quot;,
+              &quot;BGN&quot;,
+              &quot;BHD&quot;,
+              &quot;BIF&quot;,
+              &quot;BMD&quot;,
+              &quot;BND&quot;,
+              &quot;BOB&quot;,
+              &quot;BRL&quot;,
+              &quot;BSD&quot;,
+              &quot;BTN&quot;,
+              &quot;BWP&quot;,
+              &quot;BYN&quot;,
+              &quot;BYR&quot;,
+              &quot;BZD&quot;,
+              &quot;CAD&quot;,
+              &quot;CDF&quot;,
+              &quot;CHF&quot;,
+              &quot;CLP&quot;,
+              &quot;CNY&quot;,
+              &quot;COP&quot;,
+              &quot;CRC&quot;,
+              &quot;CSD&quot;,
+              &quot;CUP&quot;,
+              &quot;CVE&quot;,
+              &quot;CZK&quot;,
+              &quot;DEM&quot;,
+              &quot;DJF&quot;,
+              &quot;DKK&quot;,
+              &quot;DOP&quot;,
+              &quot;DZD&quot;,
+              &quot;EEK&quot;,
+              &quot;EGP&quot;,
+              &quot;ERN&quot;,
+              &quot;ESP&quot;,
+              &quot;ETB&quot;,
+              &quot;EUR&quot;,
+              &quot;FIM&quot;,
+              &quot;FJD&quot;,
+              &quot;FKP&quot;,
+              &quot;FRF&quot;,
+              &quot;GBP&quot;,
+              &quot;GEL&quot;,
+              &quot;GGP&quot;,
+              &quot;GHS&quot;,
+              &quot;GIP&quot;,
+              &quot;GMD&quot;,
+              &quot;GNF&quot;,
+              &quot;GRD&quot;,
+              &quot;GTQ&quot;,
+              &quot;GYD&quot;,
+              &quot;HKD&quot;,
+              &quot;HNL&quot;,
+              &quot;HRK&quot;,
+              &quot;HTG&quot;,
+              &quot;HUF&quot;,
+              &quot;IDR&quot;,
+              &quot;ILS&quot;,
+              &quot;IMP&quot;,
+              &quot;INR&quot;,
+              &quot;IQD&quot;,
+              &quot;IRR&quot;,
+              &quot;ISK&quot;,
+              &quot;ITL&quot;,
+              &quot;JEP&quot;,
+              &quot;JMD&quot;,
+              &quot;JOD&quot;,
+              &quot;JPY&quot;,
+              &quot;KES&quot;,
+              &quot;KGS&quot;,
+              &quot;KHR&quot;,
+              &quot;KMF&quot;,
+              &quot;KPW&quot;,
+              &quot;KRW&quot;,
+              &quot;KWD&quot;,
+              &quot;KYD&quot;,
+              &quot;KZT&quot;,
+              &quot;LAK&quot;,
+              &quot;LBP&quot;,
+              &quot;LKR&quot;,
+              &quot;LRD&quot;,
+              &quot;LSL&quot;,
+              &quot;LTL&quot;,
+              &quot;LUF&quot;,
+              &quot;LVL&quot;,
+              &quot;LYD&quot;,
+              &quot;MAD&quot;,
+              &quot;MDL&quot;,
+              &quot;MGA&quot;,
+              &quot;MKD&quot;,
+              &quot;MMK&quot;,
+              &quot;MNT&quot;,
+              &quot;MOP&quot;,
+              &quot;MRU&quot;,
+              &quot;MUR&quot;,
+              &quot;MVR&quot;,
+              &quot;MWK&quot;,
+              &quot;MXN&quot;,
+              &quot;MYR&quot;,
+              &quot;MZN&quot;,
+              &quot;NAD&quot;,
+              &quot;NGN&quot;,
+              &quot;NIO&quot;,
+              &quot;NOK&quot;,
+              &quot;NPR&quot;,
+              &quot;NZD&quot;,
+              &quot;OMR&quot;,
+              &quot;PAB&quot;,
+              &quot;PEN&quot;,
+              &quot;PGK&quot;,
+              &quot;PHP&quot;,
+              &quot;PKR&quot;,
+              &quot;PLN&quot;,
+              &quot;PTE&quot;,
+              &quot;PYG&quot;,
+              &quot;QAR&quot;,
+              &quot;RON&quot;,
+              &quot;RSD&quot;,
+              &quot;RUB&quot;,
+              &quot;RWF&quot;,
+              &quot;SAR&quot;,
+              &quot;SBD&quot;,
+              &quot;SCR&quot;,
+              &quot;SDG&quot;,
+              &quot;SEK&quot;,
+              &quot;SGD&quot;,
+              &quot;SHP&quot;,
+              &quot;SKK&quot;,
+              &quot;SLL&quot;,
+              &quot;SOS&quot;,
+              &quot;SRD&quot;,
+              &quot;SSP&quot;,
+              &quot;STN&quot;,
+              &quot;SVC&quot;,
+              &quot;SYP&quot;,
+              &quot;SZL&quot;,
+              &quot;THB&quot;,
+              &quot;TJS&quot;,
+              &quot;TMT&quot;,
+              &quot;TND&quot;,
+              &quot;TOP&quot;,
+              &quot;TRY&quot;,
+              &quot;TTD&quot;,
+              &quot;TWD&quot;,
+              &quot;TZS&quot;,
+              &quot;UAH&quot;,
+              &quot;UGX&quot;,
+              &quot;USD&quot;,
+              &quot;UYU&quot;,
+              &quot;UZS&quot;,
+              &quot;VEF&quot;,
+              &quot;VES&quot;,
+              &quot;VND&quot;,
+              &quot;VUV&quot;,
+              &quot;WST&quot;,
+              &quot;XAF&quot;,
+              &quot;XCD&quot;,
+              &quot;XOF&quot;,
+              &quot;XPF&quot;,
+              &quot;YER&quot;,
+              &quot;ZAR&quot;,
+              &quot;ZMW&quot;
+            ]
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Listenpreis (UVP)&quot;,
+            &quot;description&quot;: &quot;Geben Sie den Listenpreis des Produkts ohne Steuern an. Der Listenpreis wird h&auml;ufig als empfohlener Herstellerpreis oder unverbindliche Preisempfehlung (UVP) bezeichnet, der vom Hersteller festgelegt und von einem Hersteller, Lieferanten oder Verk&auml;ufer angeboten wird. Dies ist nicht der Angebots- oder Selbstkostenpreis.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;69.71&quot;
+            ],
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;maximum&quot;: 100000
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;main_offer_image_locator&quot;: {
+      &quot;title&quot;: &quot;Locator f&uuml;r Hauptangebotsbild&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Speicherstelle des Bildes an&quot;,
+      &quot;examples&quot;: [
+        &quot;Zufuhr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;media_location&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;media_location&quot;: {
+            &quot;title&quot;: &quot;Hauptbildstandort&quot;,
+            &quot;description&quot;: &quot;Die URL, unter der sich das anbieterspezifische Hauptbild des Produkts befindet&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;http://www.companyname.com/images/1250.offer.jpg&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;uri&quot;,
+            &quot;pattern&quot;: &quot;^(https?|s3)://&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;other_offer_image_locator_1&quot;: {
+      &quot;title&quot;: &quot;Locator f&uuml;r anderes Angebotsbild&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Speicherstelle des Bildes an&quot;,
+      &quot;examples&quot;: [
+        &quot;Zufuhr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;media_location&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;media_location&quot;: {
+            &quot;title&quot;: &quot;Anderer Bildstandort&quot;,
+            &quot;description&quot;: &quot;Die URL f&uuml;r zus&auml;tzliche Bilder Ihres Produkts. Diese Bilder werden auf der Detailseite angezeigt, wenn der Kunde sich durchklickt, um andere mit dem Produkt verbundene Ansichten zu sehen.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;http://www.companyname.com/images/1250.other1.jpg&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;uri&quot;,
+            &quot;pattern&quot;: &quot;^(https?|s3)://&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;other_offer_image_locator_2&quot;: {
+      &quot;title&quot;: &quot;Locator f&uuml;r anderes Angebotsbild&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Speicherstelle des Bildes an&quot;,
+      &quot;examples&quot;: [
+        &quot;Zufuhr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;media_location&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;media_location&quot;: {
+            &quot;title&quot;: &quot;Anderer Bildstandort&quot;,
+            &quot;description&quot;: &quot;Die URL f&uuml;r zus&auml;tzliche Bilder Ihres Produkts. Diese Bilder werden auf der Detailseite angezeigt, wenn der Kunde sich durchklickt, um andere mit dem Produkt verbundene Ansichten zu sehen.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;http://www.companyname.com/images/1250.other1.jpg&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;uri&quot;,
+            &quot;pattern&quot;: &quot;^(https?|s3)://&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;other_offer_image_locator_3&quot;: {
+      &quot;title&quot;: &quot;Locator f&uuml;r anderes Angebotsbild&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Speicherstelle des Bildes an&quot;,
+      &quot;examples&quot;: [
+        &quot;Zufuhr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;media_location&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;media_location&quot;: {
+            &quot;title&quot;: &quot;Anderer Bildstandort&quot;,
+            &quot;description&quot;: &quot;Die URL f&uuml;r zus&auml;tzliche Bilder Ihres Produkts. Diese Bilder werden auf der Detailseite angezeigt, wenn der Kunde sich durchklickt, um andere mit dem Produkt verbundene Ansichten zu sehen.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;http://www.companyname.com/images/1250.other1.jpg&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;uri&quot;,
+            &quot;pattern&quot;: &quot;^(https?|s3)://&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;other_offer_image_locator_4&quot;: {
+      &quot;title&quot;: &quot;Locator f&uuml;r anderes Angebotsbild&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Speicherstelle des Bildes an&quot;,
+      &quot;examples&quot;: [
+        &quot;Zufuhr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;media_location&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;media_location&quot;: {
+            &quot;title&quot;: &quot;Anderer Bildstandort&quot;,
+            &quot;description&quot;: &quot;Die URL f&uuml;r zus&auml;tzliche Bilder Ihres Produkts. Diese Bilder werden auf der Detailseite angezeigt, wenn der Kunde sich durchklickt, um andere mit dem Produkt verbundene Ansichten zu sehen.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;http://www.companyname.com/images/1250.other1.jpg&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;uri&quot;,
+            &quot;pattern&quot;: &quot;^(https?|s3)://&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;other_offer_image_locator_5&quot;: {
+      &quot;title&quot;: &quot;Locator f&uuml;r anderes Angebotsbild&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Speicherstelle und die Herkunft des Bildes an&quot;,
+      &quot;examples&quot;: [
+        &quot;Zufuhr&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;media_location&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;media_location&quot;: {
+            &quot;title&quot;: &quot;Anderer Bildstandort&quot;,
+            &quot;description&quot;: &quot;Die URL f&uuml;r zus&auml;tzliche Bilder Ihres Produkts. Diese Bilder werden auf der Detailseite angezeigt, wenn der Kunde sich durchklickt, um andere mit dem Produkt verbundene Ansichten zu sehen.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;http://www.companyname.com/images/1250.other1.jpg&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;format&quot;: &quot;uri&quot;,
+            &quot;pattern&quot;: &quot;^(https?|s3)://&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;power_plug_type&quot;: {
+      &quot;title&quot;: &quot;Netzstecker&quot;,
+      &quot;description&quot;: &quot;Netzsteckertyp des Artikels angeben&quot;,
+      &quot;examples&quot;: [
+        &quot;Typ&nbsp;A: 2-polig (Nordamerika)&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 4,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Netzstecker&quot;,
+            &quot;description&quot;: &quot;Geben Sie die Art des Netzsteckers des Artikels an&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Typ&nbsp;A: 2-polig (Nordamerika)&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;16_a_5_pin&quot;,
+              &quot;32_a_5_pin&quot;,
+              &quot;type_cee716_europlug&quot;,
+              &quot;no_plug&quot;,
+              &quot;type_a_2pin_jp&quot;,
+              &quot;type_a_2pin_na_jp&quot;,
+              &quot;type_a_2pin_na&quot;,
+              &quot;type_b_3pin_jp&quot;,
+              &quot;type_b_3pin_na_jp&quot;,
+              &quot;type_b_3pin_na&quot;,
+              &quot;type_bs_2pin_uk&quot;,
+              &quot;type_c_2pin_eu&quot;,
+              &quot;type_cef_2pin_eu&quot;,
+              &quot;type_d_3pin_in&quot;,
+              &quot;type_ef_2pin_eu&quot;,
+              &quot;type_e_2pin_fr&quot;,
+              &quot;type_f_2pin_de_es&quot;,
+              &quot;type_f_2pin_de&quot;,
+              &quot;type_g_3pin_uk&quot;,
+              &quot;type_h_3pin_il&quot;,
+              &quot;type_i_3pin_au_cn&quot;,
+              &quot;type_i_3pin_au&quot;,
+              &quot;type_j_3pin_ch&quot;,
+              &quot;type_k_3pin_dk&quot;,
+              &quot;type_l_3pin_it&quot;,
+              &quot;type_m_3pin_za&quot;,
+              &quot;type_n_3pin_br&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;16A 5 Pin&quot;,
+              &quot;32A 5 Pin&quot;,
+              &quot;CEE 7/16 Eurostecker&quot;,
+              &quot;Kein Stecker&quot;,
+              &quot;Typ A: 2-polig (Japan)&quot;,
+              &quot;Typ A: 2-polig (Nordamerika und Japan)&quot;,
+              &quot;Typ A: 2-polig (Nordamerika)&quot;,
+              &quot;Typ B: 3-polig (Japan)&quot;,
+              &quot;Typ B: 3-polig (Nordamerika und Japan)&quot;,
+              &quot;Typ B: 3-polig (Nordamerika)&quot;,
+              &quot;Typ BS 4573: 2-polig, Schukostecker f&uuml;r Rasierer (Gro&szlig;britannien)&quot;,
+              &quot;Typ C&quot;,
+              &quot;Typ C/EF: 2-polig, Eurostecker/FR-DE-Hybrid&quot;,
+              &quot;Typ D&quot;,
+              &quot;Typ E/F: 2-polig, EU-Hybrid&quot;,
+              &quot;Typ E: 2-polig (Frankreich)&quot;,
+              &quot;Typ F: 2-polig (Deutschland und Spanien)&quot;,
+              &quot;Typ F: 2-polig (Deutschland)&quot;,
+              &quot;Typ G&quot;,
+              &quot;Typ H&quot;,
+              &quot;Typ I: 3-polig (Australien und China)&quot;,
+              &quot;Typ I: 3-polig (Australien)&quot;,
+              &quot;Typ J&quot;,
+              &quot;Typ K&quot;,
+              &quot;Typ L&quot;,
+              &quot;Typ M&quot;,
+              &quot;Typ N&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;accepted_voltage_frequency&quot;: {
+      &quot;title&quot;: &quot;Zul&auml;ssige Spannungsfrequenz&quot;,
+      &quot;description&quot;: &quot;W&auml;hlen Sie die maximal zul&auml;ssige Spannung und die zugeh&ouml;rige Frequenz, die das Produkt unterst&uuml;tzen kann&quot;,
+      &quot;examples&quot;: [
+        &quot;100 bis 120 Volt und 50 Hertz&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Zul&auml;ssige Spannungsfrequenz&quot;,
+            &quot;description&quot;: &quot;W&auml;hlen Sie die maximal zul&auml;ssige Spannung und die zugeh&ouml;rige Frequenz, die das Produkt unterst&uuml;tzen kann&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;100 bis 120 Volt und 50 Hertz&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;100v_120v_50hz&quot;,
+              &quot;100v_120v_60hz&quot;,
+              &quot;100v_240v_50hz&quot;,
+              &quot;100v_240v_50hz_60hz&quot;,
+              &quot;100v_240v_60hz&quot;,
+              &quot;220v_240v_50hz&quot;,
+              &quot;220v_240v_60hz&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;100 bis 120 Volt und 50 Hertz&quot;,
+              &quot;100 bis 120 Volt und 60 Hertz&quot;,
+              &quot;100 bis 240 Volt und 50 Hertz&quot;,
+              &quot;100 bis 240 Volt und 50 Hertz bis 60 Hertz.&quot;,
+              &quot;100 bis 240 Volt und 60 Hertz&quot;,
+              &quot;220 bis 240 Volt und 50 Hertz&quot;,
+              &quot;220 bis 240 Volt und 60 Hertz&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;product_site_launch_date&quot;: {
+      &quot;title&quot;: &quot;Produkt-Site Startdatum&quot;,
+      &quot;description&quot;: &quot;Datum der Produktver&ouml;ffentlichung (JJJJMMTT) und der gew&uuml;nschten erstmaligen Anzeige auf der Website von Amazon angeben (nicht zum Erstellen von Vorbestellungen verwenden)&quot;,
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Datum der Produktver&ouml;ffentl. auf Website&quot;,
+            &quot;description&quot;: &quot;Datum der Produktver&ouml;ffentlichung (JJJJMMTT) und der gew&uuml;nschten erstmaligen Anzeige auf der Website von Amazon angeben (nicht zum Erstellen von Vorbestellungen verwenden)&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;2017-07-20&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;oneOf&quot;: [
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;date&quot;
+              },
+              {
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;format&quot;: &quot;date-time&quot;
+              }
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;country_of_origin&quot;: {
+      &quot;title&quot;: &quot;Herkunftsland&quot;,
+      &quot;description&quot;: &quot;Das Land in dem der Artikel produziert wurde. (Dieser Eintrag erm&ouml;glicht Kunden das Warenangebot nach Herkunftsl&auml;ndern zu filtern.)&quot;,
+      &quot;examples&quot;: [
+        &quot;FR&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Ursprungsland&quot;,
+            &quot;description&quot;: &quot;Ursprungsland des Produkts ausw&auml;hlen&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Gro&szlig;britannien, Spanien, Vereinigte Staaten&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;AF&quot;,
+              &quot;AL&quot;,
+              &quot;DZ&quot;,
+              &quot;AS&quot;,
+              &quot;VI&quot;,
+              &quot;AD&quot;,
+              &quot;AO&quot;,
+              &quot;AI&quot;,
+              &quot;AQ&quot;,
+              &quot;AG&quot;,
+              &quot;AR&quot;,
+              &quot;AM&quot;,
+              &quot;AW&quot;,
+              &quot;AC&quot;,
+              &quot;AZ&quot;,
+              &quot;AU&quot;,
+              &quot;BS&quot;,
+              &quot;BH&quot;,
+              &quot;BD&quot;,
+              &quot;BB&quot;,
+              &quot;BE&quot;,
+              &quot;BZ&quot;,
+              &quot;BJ&quot;,
+              &quot;BM&quot;,
+              &quot;BT&quot;,
+              &quot;BO&quot;,
+              &quot;BQ&quot;,
+              &quot;BA&quot;,
+              &quot;BW&quot;,
+              &quot;BV&quot;,
+              &quot;BR&quot;,
+              &quot;VG&quot;,
+              &quot;IO&quot;,
+              &quot;BN&quot;,
+              &quot;BG&quot;,
+              &quot;BF&quot;,
+              &quot;BI&quot;,
+              &quot;CL&quot;,
+              &quot;CN&quot;,
+              &quot;CK&quot;,
+              &quot;CR&quot;,
+              &quot;CW&quot;,
+              &quot;CI&quot;,
+              &quot;CD&quot;,
+              &quot;KP&quot;,
+              &quot;LA&quot;,
+              &quot;DE&quot;,
+              &quot;DM&quot;,
+              &quot;DO&quot;,
+              &quot;DJ&quot;,
+              &quot;DK&quot;,
+              &quot;EC&quot;,
+              &quot;SV&quot;,
+              &quot;IC&quot;,
+              &quot;ER&quot;,
+              &quot;EE&quot;,
+              &quot;FK&quot;,
+              &quot;FJ&quot;,
+              &quot;FI&quot;,
+              &quot;FR&quot;,
+              &quot;GF&quot;,
+              &quot;PF&quot;,
+              &quot;TF&quot;,
+              &quot;FO&quot;,
+              &quot;FM&quot;,
+              &quot;GA&quot;,
+              &quot;GM&quot;,
+              &quot;GE&quot;,
+              &quot;GH&quot;,
+              &quot;GI&quot;,
+              &quot;GD&quot;,
+              &quot;GR&quot;,
+              &quot;GB&quot;,
+              &quot;GL&quot;,
+              &quot;GP&quot;,
+              &quot;GU&quot;,
+              &quot;GT&quot;,
+              &quot;GG&quot;,
+              &quot;GN&quot;,
+              &quot;GW&quot;,
+              &quot;GY&quot;,
+              &quot;HT&quot;,
+              &quot;HM&quot;,
+              &quot;VA&quot;,
+              &quot;HN&quot;,
+              &quot;HK&quot;,
+              &quot;IN&quot;,
+              &quot;ID&quot;,
+              &quot;IM&quot;,
+              &quot;IR&quot;,
+              &quot;IE&quot;,
+              &quot;IS&quot;,
+              &quot;IL&quot;,
+              &quot;IT&quot;,
+              &quot;JM&quot;,
+              &quot;JP&quot;,
+              &quot;YE&quot;,
+              &quot;JE&quot;,
+              &quot;JO&quot;,
+              &quot;YU&quot;,
+              &quot;KY&quot;,
+              &quot;KH&quot;,
+              &quot;CM&quot;,
+              &quot;CA&quot;,
+              &quot;CV&quot;,
+              &quot;KZ&quot;,
+              &quot;QA&quot;,
+              &quot;KE&quot;,
+              &quot;KG&quot;,
+              &quot;KI&quot;,
+              &quot;UM&quot;,
+              &quot;CC&quot;,
+              &quot;CO&quot;,
+              &quot;KM&quot;,
+              &quot;CG&quot;,
+              &quot;HR&quot;,
+              &quot;CU&quot;,
+              &quot;KW&quot;,
+              &quot;LS&quot;,
+              &quot;LV&quot;,
+              &quot;LB&quot;,
+              &quot;LR&quot;,
+              &quot;LY&quot;,
+              &quot;LI&quot;,
+              &quot;LT&quot;,
+              &quot;LU&quot;,
+              &quot;MO&quot;,
+              &quot;MG&quot;,
+              &quot;MW&quot;,
+              &quot;MY&quot;,
+              &quot;MV&quot;,
+              &quot;ML&quot;,
+              &quot;MT&quot;,
+              &quot;MA&quot;,
+              &quot;MH&quot;,
+              &quot;MQ&quot;,
+              &quot;MR&quot;,
+              &quot;MU&quot;,
+              &quot;YT&quot;,
+              &quot;MK&quot;,
+              &quot;MX&quot;,
+              &quot;MC&quot;,
+              &quot;MN&quot;,
+              &quot;ME&quot;,
+              &quot;MS&quot;,
+              &quot;MZ&quot;,
+              &quot;MM&quot;,
+              &quot;NA&quot;,
+              &quot;NR&quot;,
+              &quot;NP&quot;,
+              &quot;NC&quot;,
+              &quot;NZ&quot;,
+              &quot;NI&quot;,
+              &quot;NL&quot;,
+              &quot;AN&quot;,
+              &quot;NE&quot;,
+              &quot;NG&quot;,
+              &quot;NU&quot;,
+              &quot;NF&quot;,
+              &quot;NO&quot;,
+              &quot;MP&quot;,
+              &quot;OM&quot;,
+              &quot;TP&quot;,
+              &quot;PK&quot;,
+              &quot;PW&quot;,
+              &quot;PS&quot;,
+              &quot;PA&quot;,
+              &quot;PG&quot;,
+              &quot;PY&quot;,
+              &quot;PE&quot;,
+              &quot;PH&quot;,
+              &quot;PN&quot;,
+              &quot;PL&quot;,
+              &quot;PT&quot;,
+              &quot;PR&quot;,
+              &quot;IQ&quot;,
+              &quot;KR&quot;,
+              &quot;MD&quot;,
+              &quot;RW&quot;,
+              &quot;RO&quot;,
+              &quot;RU&quot;,
+              &quot;RE&quot;,
+              &quot;SB&quot;,
+              &quot;ZM&quot;,
+              &quot;WS&quot;,
+              &quot;SM&quot;,
+              &quot;SA&quot;,
+              &quot;SE&quot;,
+              &quot;CH&quot;,
+              &quot;SN&quot;,
+              &quot;RS&quot;,
+              &quot;CS&quot;,
+              &quot;SC&quot;,
+              &quot;SL&quot;,
+              &quot;ZW&quot;,
+              &quot;SG&quot;,
+              &quot;SK&quot;,
+              &quot;SI&quot;,
+              &quot;SO&quot;,
+              &quot;ES&quot;,
+              &quot;LK&quot;,
+              &quot;BL&quot;,
+              &quot;SH&quot;,
+              &quot;KN&quot;,
+              &quot;LC&quot;,
+              &quot;MF&quot;,
+              &quot;SX&quot;,
+              &quot;PM&quot;,
+              &quot;VC&quot;,
+              &quot;SD&quot;,
+              &quot;SR&quot;,
+              &quot;SJ&quot;,
+              &quot;SZ&quot;,
+              &quot;SY&quot;,
+              &quot;ST&quot;,
+              &quot;ZA&quot;,
+              &quot;GS&quot;,
+              &quot;SS&quot;,
+              &quot;TJ&quot;,
+              &quot;TW&quot;,
+              &quot;TH&quot;,
+              &quot;TL&quot;,
+              &quot;TG&quot;,
+              &quot;TK&quot;,
+              &quot;TO&quot;,
+              &quot;TT&quot;,
+              &quot;TA&quot;,
+              &quot;TD&quot;,
+              &quot;CZ&quot;,
+              &quot;TN&quot;,
+              &quot;TM&quot;,
+              &quot;TC&quot;,
+              &quot;TV&quot;,
+              &quot;TR&quot;,
+              &quot;UG&quot;,
+              &quot;UA&quot;,
+              &quot;unknown&quot;,
+              &quot;HU&quot;,
+              &quot;UY&quot;,
+              &quot;UZ&quot;,
+              &quot;VU&quot;,
+              &quot;VE&quot;,
+              &quot;AE&quot;,
+              &quot;TZ&quot;,
+              &quot;US&quot;,
+              &quot;UK&quot;,
+              &quot;VN&quot;,
+              &quot;WF&quot;,
+              &quot;WD&quot;,
+              &quot;CX&quot;,
+              &quot;BY&quot;,
+              &quot;EH&quot;,
+              &quot;WZ&quot;,
+              &quot;XB&quot;,
+              &quot;XC&quot;,
+              &quot;XE&quot;,
+              &quot;XK&quot;,
+              &quot;XM&quot;,
+              &quot;XN&quot;,
+              &quot;XY&quot;,
+              &quot;ZR&quot;,
+              &quot;CF&quot;,
+              &quot;CY&quot;,
+              &quot;EG&quot;,
+              &quot;GQ&quot;,
+              &quot;ET&quot;,
+              &quot;AX&quot;,
+              &quot;AT&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Afghanistan&quot;,
+              &quot;Albanien&quot;,
+              &quot;Algerien&quot;,
+              &quot;Amerikanisch-Samoa&quot;,
+              &quot;Amerikanische Jungferninseln&quot;,
+              &quot;Andorra&quot;,
+              &quot;Angola&quot;,
+              &quot;Anguilla&quot;,
+              &quot;Antarktis&quot;,
+              &quot;Antigua und Barbuda&quot;,
+              &quot;Argentinien&quot;,
+              &quot;Armenien&quot;,
+              &quot;Aruba&quot;,
+              &quot;Ascension&quot;,
+              &quot;Aserbaidschan&quot;,
+              &quot;Australien&quot;,
+              &quot;Bahamas&quot;,
+              &quot;Bahrain&quot;,
+              &quot;Bangladesch&quot;,
+              &quot;Barbados&quot;,
+              &quot;Belgien&quot;,
+              &quot;Belize&quot;,
+              &quot;Benin&quot;,
+              &quot;Bermuda&quot;,
+              &quot;Bhutan&quot;,
+              &quot;Bolivien&quot;,
+              &quot;Bonaire, St. Eustatius und Saba&quot;,
+              &quot;Bosnien und Herzegowina&quot;,
+              &quot;Botsuana&quot;,
+              &quot;Bouvetinsel&quot;,
+              &quot;Brasilien&quot;,
+              &quot;Britische Jungferninseln&quot;,
+              &quot;Britisches Territorium im Indischen Ozean&quot;,
+              &quot;Brunei Darussalam&quot;,
+              &quot;Bulgarien&quot;,
+              &quot;Burkina Faso&quot;,
+              &quot;Burundi&quot;,
+              &quot;Chile&quot;,
+              &quot;China&quot;,
+              &quot;Cookinseln&quot;,
+              &quot;Costa Rica&quot;,
+              &quot;Cura&ccedil;ao&quot;,
+              &quot;C&ocirc;te d'Ivoire&quot;,
+              &quot;Demokratische Republik Kongo&quot;,
+              &quot;Demokratische Volksrepublik Korea&quot;,
+              &quot;Demokratische Volksrepublik Laos&quot;,
+              &quot;Deutschland&quot;,
+              &quot;Dominica&quot;,
+              &quot;Dominikanische Republik&quot;,
+              &quot;Dschibuti&quot;,
+              &quot;D&auml;nemark&quot;,
+              &quot;Ecuador&quot;,
+              &quot;El Salvador&quot;,
+              &quot;Elfenbeik&uuml;ste&quot;,
+              &quot;Eritrea&quot;,
+              &quot;Estland&quot;,
+              &quot;Falklandinseln (Malwinen)&quot;,
+              &quot;Fidschi&quot;,
+              &quot;Finnland&quot;,
+              &quot;Frankreich&quot;,
+              &quot;Franz&ouml;sisch-Guayana&quot;,
+              &quot;Franz&ouml;sisch-Polynesien&quot;,
+              &quot;Franz&ouml;sische S&uuml;d- und Antarktisgebiete&quot;,
+              &quot;F&auml;r&ouml;er&quot;,
+              &quot;F&ouml;derierte Staaten von Mikronesien&quot;,
+              &quot;Gabun&quot;,
+              &quot;Gambia&quot;,
+              &quot;Georgien&quot;,
+              &quot;Ghana&quot;,
+              &quot;Gibraltar&quot;,
+              &quot;Grenada&quot;,
+              &quot;Griechenland&quot;,
+              &quot;Gro&szlig;britannien&quot;,
+              &quot;Gr&ouml;nland&quot;,
+              &quot;Guadeloupe&quot;,
+              &quot;Guam&quot;,
+              &quot;Guatemala&quot;,
+              &quot;Guernsey&quot;,
+              &quot;Guinea&quot;,
+              &quot;Guinea-Bissau&quot;,
+              &quot;Guyana&quot;,
+              &quot;Haiti&quot;,
+              &quot;Heard und die McDonaldinseln&quot;,
+              &quot;Heiliger Stuhl/Vatikan&quot;,
+              &quot;Honduras&quot;,
+              &quot;Hongkong&quot;,
+              &quot;Indien&quot;,
+              &quot;Indonesien&quot;,
+              &quot;Insel Man&quot;,
+              &quot;Iran&quot;,
+              &quot;Irland&quot;,
+              &quot;Island&quot;,
+              &quot;Israel&quot;,
+              &quot;Italien&quot;,
+              &quot;Jamaika&quot;,
+              &quot;Japan&quot;,
+              &quot;Jemen&quot;,
+              &quot;Jersey&quot;,
+              &quot;Jordanien&quot;,
+              &quot;Jugoslawien&quot;,
+              &quot;Kaimaninseln&quot;,
+              &quot;Kambodscha&quot;,
+              &quot;Kamerun&quot;,
+              &quot;Kanada&quot;,
+              &quot;Kap Verde&quot;,
+              &quot;Kasachstan&quot;,
+              &quot;Katar&quot;,
+              &quot;Kenia&quot;,
+              &quot;Kirgisistan&quot;,
+              &quot;Kiribati&quot;,
+              &quot;Kleinere Amerikanische &Uuml;berseeinseln&quot;,
+              &quot;Kokosinseln (Keelinginseln)&quot;,
+              &quot;Kolumbien&quot;,
+              &quot;Komoren&quot;,
+              &quot;Kongo&quot;,
+              &quot;Kroatien&quot;,
+              &quot;Kuba&quot;,
+              &quot;Kuwait&quot;,
+              &quot;Lesotho&quot;,
+              &quot;Lettland&quot;,
+              &quot;Libanon&quot;,
+              &quot;Liberia&quot;,
+              &quot;Libyen&quot;,
+              &quot;Liechtenstein&quot;,
+              &quot;Litauen&quot;,
+              &quot;Luxemburg&quot;,
+              &quot;Macau&quot;,
+              &quot;Madagaskar&quot;,
+              &quot;Malawi&quot;,
+              &quot;Malaysia&quot;,
+              &quot;Malediven&quot;,
+              &quot;Mali&quot;,
+              &quot;Malta&quot;,
+              &quot;Marokko&quot;,
+              &quot;Marshallinseln&quot;,
+              &quot;Martinique&quot;,
+              &quot;Mauretanien&quot;,
+              &quot;Mauritius&quot;,
+              &quot;Mayotte&quot;,
+              &quot;Mazedonien&quot;,
+              &quot;Mexiko&quot;,
+              &quot;Monaco&quot;,
+              &quot;Mongolei&quot;,
+              &quot;Montenegro&quot;,
+              &quot;Montserrat&quot;,
+              &quot;Mosambik&quot;,
+              &quot;Myanmar&quot;,
+              &quot;Namibia&quot;,
+              &quot;Nauru&quot;,
+              &quot;Nepal&quot;,
+              &quot;Neukaledonien&quot;,
+              &quot;Neuseeland&quot;,
+              &quot;Nicaragua&quot;,
+              &quot;Niederlande&quot;,
+              &quot;Niederl&auml;ndische Antillen&quot;,
+              &quot;Niger&quot;,
+              &quot;Nigeria&quot;,
+              &quot;Niue&quot;,
+              &quot;Norfolkinsel&quot;,
+              &quot;Norwegen&quot;,
+              &quot;N&ouml;rdliche Marianen&quot;,
+              &quot;Oman&quot;,
+              &quot;Osttimor&quot;,
+              &quot;Pakistan&quot;,
+              &quot;Palau&quot;,
+              &quot;Pal&auml;stinensische Gebiete&quot;,
+              &quot;Panama&quot;,
+              &quot;Papua-Neuguinea&quot;,
+              &quot;Paraguay&quot;,
+              &quot;Peru&quot;,
+              &quot;Philippinen&quot;,
+              &quot;Pitcairn&quot;,
+              &quot;Polen&quot;,
+              &quot;Portugal&quot;,
+              &quot;Puerto Rico&quot;,
+              &quot;Republik Irak&quot;,
+              &quot;Republik Korea&quot;,
+              &quot;Republik Moldau&quot;,
+              &quot;Ruanda&quot;,
+              &quot;Rum&auml;nien&quot;,
+              &quot;Russland&quot;,
+              &quot;R&eacute;union&quot;,
+              &quot;Salomonen&quot;,
+              &quot;Sambia&quot;,
+              &quot;Samoa&quot;,
+              &quot;San Marino&quot;,
+              &quot;Saudi-Arabien&quot;,
+              &quot;Schweden&quot;,
+              &quot;Schweiz&quot;,
+              &quot;Senegal&quot;,
+              &quot;Serbien&quot;,
+              &quot;Serbien und Montenegro&quot;,
+              &quot;Seychellen&quot;,
+              &quot;Sierra Leone&quot;,
+              &quot;Simbabwe&quot;,
+              &quot;Singapur&quot;,
+              &quot;Slowakei&quot;,
+              &quot;Slowenien&quot;,
+              &quot;Somalia&quot;,
+              &quot;Spanien&quot;,
+              &quot;Sri Lanka&quot;,
+              &quot;St. Barth&eacute;lemy&quot;,
+              &quot;St. Helena, Ascension und Tristan da Cunha&quot;,
+              &quot;St. Kitts und Nevis&quot;,
+              &quot;St. Lucia&quot;,
+              &quot;St. Martin (franz&ouml;sischer Teil)&quot;,
+              &quot;St. Martin (niederl&auml;ndischer Teil)&quot;,
+              &quot;St. Pierre und Miquelon&quot;,
+              &quot;St. Vincent und die Grenadinen&quot;,
+              &quot;Sudan&quot;,
+              &quot;Suriname&quot;,
+              &quot;Svalbard und Jan Mayen&quot;,
+              &quot;Swasiland&quot;,
+              &quot;Syrien&quot;,
+              &quot;S&atilde;o Tom&eacute; und Pr&iacute;ncipe&quot;,
+              &quot;S&uuml;dafrika&quot;,
+              &quot;S&uuml;dgeorgien und die S&uuml;dlichen Sandwichinseln&quot;,
+              &quot;S&uuml;dsudan&quot;,
+              &quot;Tadschikistan&quot;,
+              &quot;Taiwan&quot;,
+              &quot;Thailand&quot;,
+              &quot;Timor-Leste&quot;,
+              &quot;Togo&quot;,
+              &quot;Tokelau&quot;,
+              &quot;Tonga&quot;,
+              &quot;Trinidad und Tobago&quot;,
+              &quot;Tristan da Cunha&quot;,
+              &quot;Tschad&quot;,
+              &quot;Tschechische Republik&quot;,
+              &quot;Tunesien&quot;,
+              &quot;Turkmenistan&quot;,
+              &quot;Turks- und Caicosinseln&quot;,
+              &quot;Tuvalu&quot;,
+              &quot;T&uuml;rkei&quot;,
+              &quot;Uganda&quot;,
+              &quot;Ukraine&quot;,
+              &quot;Unbekannt&quot;,
+              &quot;Ungarn&quot;,
+              &quot;Uruguay&quot;,
+              &quot;Usbekistan&quot;,
+              &quot;Vanuatu&quot;,
+              &quot;Venezuela&quot;,
+              &quot;Vereinigte Arabische Emirate&quot;,
+              &quot;Vereinigte Republik Tansania&quot;,
+              &quot;Vereinigte Staaten&quot;,
+              &quot;Vereinigtes K&ouml;nigreich&quot;,
+              &quot;Vietnam&quot;,
+              &quot;Wallis und Futuna&quot;,
+              &quot;WD&quot;,
+              &quot;Weihnachtsinsel&quot;,
+              &quot;Wei&szlig;russland&quot;,
+              &quot;Westsahara&quot;,
+              &quot;WZ&quot;,
+              &quot;XB&quot;,
+              &quot;XC&quot;,
+              &quot;XE&quot;,
+              &quot;XK&quot;,
+              &quot;XM&quot;,
+              &quot;XN&quot;,
+              &quot;XY&quot;,
+              &quot;Zaire&quot;,
+              &quot;Zentralafrikanische Republik&quot;,
+              &quot;Zypern&quot;,
+              &quot;&Auml;gypten&quot;,
+              &quot;&Auml;quatorialguinea&quot;,
+              &quot;&Auml;thiopien&quot;,
+              &quot;&Aring;landinseln&quot;,
+              &quot;&Ouml;sterreich&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;batteries_required&quot;: {
+      &quot;title&quot;: &quot;Batterien erforderlich&quot;,
+      &quot;description&quot;: &quot;&bdquo;Ja&ldquo; w&auml;hlen, wenn f&uuml;r den Betrieb Batterien erforderlich sind (oder wenn der Artikel eine Batterie ist), andernfalls &bdquo;Nein&ldquo;. Beachten Sie, dass eine interne wiederaufladbare Batterie auch als Batterie angesehen wird.&quot;,
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Sind Batterien erforderlich?&quot;,
+            &quot;description&quot;: &quot;&bdquo;Ja&ldquo; w&auml;hlen, wenn f&uuml;r den Betrieb Batterien erforderlich sind (oder wenn der Artikel eine Batterie ist), andernfalls &bdquo;Nein&ldquo;. Beachten Sie, dass eine interne wiederaufladbare Batterie auch als Batterie angesehen wird.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Ja, Nein&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Ja&quot;,
+              &quot;Nein&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;batteries_included&quot;: {
+      &quot;title&quot;: &quot;Batterien enthalten&quot;,
+      &quot;description&quot;: &quot;&bdquo;Ja&ldquo; w&auml;hlen, wenn das Produkt Batterien enth&auml;lt (z.&nbsp;B. in Bluetooth-Kopfh&ouml;rern) oder diese dem Produkt beigef&uuml;gt sind (z.&nbsp;B. separate Batterien f&uuml;r eine Kamera), andernfalls &bdquo;Nein&ldquo;&quot;,
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Sind Batterien enthalten?&quot;,
+            &quot;description&quot;: &quot;&bdquo;Ja&ldquo; w&auml;hlen, wenn das Produkt Batterien enth&auml;lt (z.&nbsp;B. in Bluetooth-Kopfh&ouml;rern) oder diese dem Produkt beigef&uuml;gt sind (z.&nbsp;B. separate Batterien f&uuml;r eine Kamera), andernfalls &bdquo;Nein&ldquo;&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Ja, Nein&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Ja&quot;,
+              &quot;Nein&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;battery&quot;: {
+      &quot;title&quot;: &quot;Akku&quot;,
+      &quot;description&quot;: &quot;Geben Sie die Informationen zur Batterie an&quot;,
+      &quot;examples&quot;: [
+        &quot;Alkaline&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;cell_composition&quot;: {
+            &quot;title&quot;: &quot;Batterietyp&quot;,
+            &quot;description&quot;: &quot;Chemische Zusammensetzung der Batteriezelle ausw&auml;hlen&quot;,
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;maxItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;value&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;title&quot;: &quot;Zusammensetzung der Batteriezelle&quot;,
+                  &quot;description&quot;: &quot;Chemische Zusammensetzung der Batteriezelle ausw&auml;hlen&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;NiMH, Lithium-Ionen&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;alkaline&quot;,
+                    &quot;aluminum_oxygen&quot;,
+                    &quot;lead_calcium&quot;,
+                    &quot;lead_acid&quot;,
+                    &quot;lead_acid_agm&quot;,
+                    &quot;lithium&quot;,
+                    &quot;lithium_ion&quot;,
+                    &quot;lithium_cobalt&quot;,
+                    &quot;lithium_air&quot;,
+                    &quot;lithium_manganese_dioxide&quot;,
+                    &quot;lithium_nickel_cobalt_aluminum&quot;,
+                    &quot;lithium_nickel_manganese_cobalt&quot;,
+                    &quot;lithium_polymer&quot;,
+                    &quot;lithium_thionyl_chloride&quot;,
+                    &quot;lithium_metal&quot;,
+                    &quot;lithium_phosphate&quot;,
+                    &quot;lithium_titanate&quot;,
+                    &quot;manganese&quot;,
+                    &quot;NiCAD&quot;,
+                    &quot;nickel_zinc&quot;,
+                    &quot;nickel_iron&quot;,
+                    &quot;nickel_oxyhydroxide&quot;,
+                    &quot;NiMh&quot;,
+                    &quot;polymer&quot;,
+                    &quot;mercury_oxide&quot;,
+                    &quot;silver_calcium&quot;,
+                    &quot;silver_zinc&quot;,
+                    &quot;silver_oxide&quot;,
+                    &quot;sealed_lead_acid&quot;,
+                    &quot;zinc&quot;,
+                    &quot;zinc_carbon&quot;,
+                    &quot;zinc_air&quot;,
+                    &quot;zinc_chloride&quot;
+                  ],
+                  &quot;enumNames&quot;: [
+                    &quot;Alkalisch&quot;,
+                    &quot;Aluminium-Sauerstoff&quot;,
+                    &quot;Blei-Kalzium&quot;,
+                    &quot;Bleis&auml;ure&quot;,
+                    &quot;Bleis&auml;ure, AGM&quot;,
+                    &quot;Lithium&quot;,
+                    &quot;Lithium-Ionen&quot;,
+                    &quot;Lithium-Kobalt&quot;,
+                    &quot;Lithium-Luft&quot;,
+                    &quot;Lithium-Mangandioxid&quot;,
+                    &quot;Lithium-Nickel-Kobalt-Aluminium (NCA)&quot;,
+                    &quot;Lithium-Nickel-Mangan-Kobalt (NMC)&quot;,
+                    &quot;Lithium-Polymer&quot;,
+                    &quot;Lithium-Thionylchlorid (Li-SOCL2)&quot;,
+                    &quot;Lithiummetall&quot;,
+                    &quot;Lithiumphosphat&quot;,
+                    &quot;Lithiumtitanat&quot;,
+                    &quot;Mangan&quot;,
+                    &quot;NiCAD&quot;,
+                    &quot;Nickel-Zink&quot;,
+                    &quot;Nickeleisen&quot;,
+                    &quot;Nickeloxyhydroxid&quot;,
+                    &quot;NiMH&quot;,
+                    &quot;Polymer&quot;,
+                    &quot;Quecksilberoxid&quot;,
+                    &quot;Silber-Kalzium&quot;,
+                    &quot;Silber-Zink&quot;,
+                    &quot;Silberoxid&quot;,
+                    &quot;Versiegelte Bleis&auml;ure&quot;,
+                    &quot;Zink&quot;,
+                    &quot;Zink-Kohle&quot;,
+                    &quot;Zink-Luft&quot;,
+                    &quot;Zinkchlorid&quot;
+                  ]
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;weight&quot;: {
+            &quot;title&quot;: &quot;Batteriegewicht&quot;,
+            &quot;description&quot;: &quot;Nettogesamtgewicht der enthaltenen Batterien angeben. Dies ist das Gewicht der Batterien ohne Verpackung oder das dazugeh&ouml;rige Ger&auml;t.&quot;,
+            &quot;examples&quot;: [
+              &quot;2.5 Gramm&quot;
+            ],
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;maxItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;unit&quot;,
+                &quot;value&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;title&quot;: &quot;Batteriegewicht&quot;,
+                  &quot;description&quot;: &quot;Nettogesamtgewicht (numerischer Wert) der enthaltenen Batterien angeben. Dies ist das Gewicht der Batterien ohne Verpackung und das dazugeh&ouml;rige Ger&auml;t.&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;2.5&quot;
+                  ],
+                  &quot;type&quot;: &quot;number&quot;,
+                  &quot;minimum&quot;: 0,
+                  &quot;maxLength&quot;: 5000
+                },
+                &quot;unit&quot;: {
+                  &quot;title&quot;: &quot;Batteriegewicht &ndash; Einheit&quot;,
+                  &quot;description&quot;: &quot;Entsprechende Einheit ausw&auml;hlen&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;Gramm&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;grams&quot;,
+                    &quot;hundredths_pounds&quot;,
+                    &quot;kilograms&quot;,
+                    &quot;milligrams&quot;,
+                    &quot;pounds&quot;,
+                    &quot;tons&quot;,
+                    &quot;ounces&quot;
+                  ],
+                  &quot;enumNames&quot;: [
+                    &quot;Gramm&quot;,
+                    &quot;Hundertstel Pfund&quot;,
+                    &quot;Kilogramm&quot;,
+                    &quot;Milligramm&quot;,
+                    &quot;Pfund&quot;,
+                    &quot;Tonnen&quot;,
+                    &quot;Unzen&quot;
+                  ]
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;num_batteries&quot;: {
+      &quot;title&quot;: &quot;Anzahl der Batterien&quot;,
+      &quot;description&quot;: &quot;Anzahl und Typ der Batterien angeben, die f&uuml;r den Betrieb des Artikels ben&ouml;tigt werden  Wenn der Artikel &uuml;ber Batterien verf&uuml;gt, bitte auch Ersatzbatterien ber&uuml;cksichtigen.&quot;,
+      &quot;examples&quot;: [
+        &quot;1 AA, 2 AAA&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1000,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;type&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;quantity&quot;,
+          &quot;type&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;quantity&quot;: {
+            &quot;title&quot;: &quot;Anzahl der Batterien&quot;,
+            &quot;description&quot;: &quot;Anzahl von Batterien angeben, die f&uuml;r den Betrieb des Artikels ben&ouml;tigt werden.  Wenn der Artikel &uuml;ber Batterien verf&uuml;gt, bitte auch Ersatzbatterien ber&uuml;cksichtigen.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;1, 4&quot;
+            ],
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;minimum&quot;: 0
+          },
+          &quot;type&quot;: {
+            &quot;title&quot;: &quot;Batterietyp&quot;,
+            &quot;description&quot;: &quot;Batterietyp angeben, der f&uuml;r den Betrieb des Artikels ben&ouml;tigt wird&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;A, AA, Lithium-Ionen&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;12v&quot;,
+              &quot;9v&quot;,
+              &quot;a&quot;,
+              &quot;aa&quot;,
+              &quot;aaa&quot;,
+              &quot;aaaa&quot;,
+              &quot;c&quot;,
+              &quot;cr123a&quot;,
+              &quot;cr2&quot;,
+              &quot;cr2032&quot;,
+              &quot;cr2430&quot;,
+              &quot;cr5&quot;,
+              &quot;d&quot;,
+              &quot;lithium_ion&quot;,
+              &quot;lithium_metal&quot;,
+              &quot;lithium_polymer&quot;,
+              &quot;lr41&quot;,
+              &quot;lr43&quot;,
+              &quot;lr44&quot;,
+              &quot;nonstandard_battery&quot;,
+              &quot;p76&quot;,
+              &quot;product_specific&quot;,
+              &quot;unknown&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;12&nbsp;V&quot;,
+              &quot;9&nbsp;V&quot;,
+              &quot;A&quot;,
+              &quot;AA&quot;,
+              &quot;AAA&quot;,
+              &quot;AAAA&quot;,
+              &quot;C&quot;,
+              &quot;CR123A&quot;,
+              &quot;CR2&quot;,
+              &quot;CR2032&quot;,
+              &quot;CR2430&quot;,
+              &quot;CR5&quot;,
+              &quot;D&quot;,
+              &quot;Lithium-Ionen&quot;,
+              &quot;Lithium-Metall&quot;,
+              &quot;Lithium-Polymer&quot;,
+              &quot;LR41&quot;,
+              &quot;LR43&quot;,
+              &quot;LR44&quot;,
+              &quot;Nicht normgerechte(r) Batterie/Akku&quot;,
+              &quot;P76&quot;,
+              &quot;Produktspezifisch&quot;,
+              &quot;Unbekannt&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;number_of_lithium_metal_cells&quot;: {
+      &quot;title&quot;: &quot;Anzahl der Lithium-Metall-Zellen&quot;,
+      &quot;description&quot;: &quot;Gesamte Anzahl an Lithium-Metall-Zellen, die sich nicht einem eingeschlossenen Akku befinden.&quot;,
+      &quot;examples&quot;: [
+        &quot;1&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Anzahl der Lithium-Metall-Zellen&quot;,
+            &quot;description&quot;: &quot;Gesamtzahl der Lithium-Metall-Zellen im Produkt angeben, die nicht von einer Batterieh&uuml;lle ummantelt sind (z.&nbsp;B. Knopfzellen)&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;1, 3&quot;
+            ],
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;minimum&quot;: 0
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;number_of_lithium_ion_cells&quot;: {
+      &quot;title&quot;: &quot;Anzahl der Lithium-Ionen-Zellen&quot;,
+      &quot;description&quot;: &quot;Gesamte Anzahl an Lithium-Ionen-Zellen, die sich nicht einem eingeschlossenen Akku befinden.&quot;,
+      &quot;examples&quot;: [
+        &quot;1&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Anzahl der Lithium-Ionen-Zellen&quot;,
+            &quot;description&quot;: &quot;Gesamtzahl der Lithium-Ionen-Zellen im Produkt angeben, die nicht von einer Batterieh&uuml;lle ummantelt sind Eine AA-Batterie wird beispielsweise als Zelle betrachtet.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;1, 3&quot;
+            ],
+            &quot;type&quot;: &quot;integer&quot;,
+            &quot;minimum&quot;: 0
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;lithium_battery&quot;: {
+      &quot;title&quot;: &quot;Lithiumbatterie&quot;,
+      &quot;description&quot;: &quot;Geben Sie Informationen zur Lithiumbatterie an.&quot;,
+      &quot;examples&quot;: [
+        &quot;Milligramm&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;energy_content&quot;: {
+            &quot;title&quot;: &quot;Kapazit&auml;t Lithium-Akku&quot;,
+            &quot;description&quot;: &quot;Wattstunden jeder Batterie (oder Zelle)&quot;,
+            &quot;examples&quot;: [
+              &quot;3&quot;
+            ],
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;maxItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;unit&quot;,
+                &quot;value&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;title&quot;: &quot;Energiemenge der Lithiumbatterie&quot;,
+                  &quot;description&quot;: &quot;Energiemenge der Lithiumbatterie angeben (numerischer Wert)&quot;,
+                  &quot;editable&quot;: false,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;4.2&quot;
+                  ],
+                  &quot;type&quot;: &quot;number&quot;,
+                  &quot;minimum&quot;: 0,
+                  &quot;maxLength&quot;: 5000
+                },
+                &quot;unit&quot;: {
+                  &quot;title&quot;: &quot;Energiemenge der Lith.batterie &ndash; Einheit&quot;,
+                  &quot;description&quot;: &quot;Entsprechende Einheit ausw&auml;hlen&quot;,
+                  &quot;editable&quot;: false,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;Wattstunden&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;btus&quot;,
+                    &quot;joules&quot;,
+                    &quot;kilowatt_hours&quot;,
+                    &quot;cubic_feet&quot;,
+                    &quot;cubic_meters&quot;,
+                    &quot;milliampere_second&quot;,
+                    &quot;milliampere_hour&quot;,
+                    &quot;milliamp_hours&quot;,
+                    &quot;watt_hours&quot;
+                  ],
+                  &quot;enumNames&quot;: [
+                    &quot;Britische W&auml;rmeeinheiten (BTU)&quot;,
+                    &quot;Joule&quot;,
+                    &quot;Kilowattstunden&quot;,
+                    &quot;Kubikfu&szlig;&quot;,
+                    &quot;Kubikmeter&quot;,
+                    &quot;Milliamperesekunde (mAs)&quot;,
+                    &quot;Milliamperestunde (mAh)&quot;,
+                    &quot;Milliamperestunden (mAh)&quot;,
+                    &quot;Wattstunden&quot;
+                  ]
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;packaging&quot;: {
+            &quot;title&quot;: &quot;Verpackung Lithium-Akku&quot;,
+            &quot;description&quot;: &quot;W&auml;hlen Sie aus: \n- batteries_only wenn der Akku einzeln verkauft wird\n- batteries_contained_in_equipment wenn der Akku im Produkt montiert ist\n- batteries_packed_with_equipment wenn der Akku zusammen mit dem Produkt verpackt ist.&quot;,
+            &quot;examples&quot;: [
+              &quot;batteries_only&quot;
+            ],
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;maxItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;value&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;title&quot;: &quot;Verpackung der Lithiumbatterie&quot;,
+                  &quot;description&quot;: &quot;&bdquo;In Produkt enthalten&ldquo; w&auml;hlen, wenn die Batterie im Artikel installiert ist. &bdquo;Beigef&uuml;gt&ldquo; w&auml;hlen, wenn die Batterie dem Ger&auml;t separat beigef&uuml;gt ist. &bdquo;Nur Batterien&ldquo; w&auml;hlen, wenn das Produkt eine Batterie ist oder nur zusammen im Paket verkauft wird.&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;In Produkt enthalten, Beigef&uuml;gt, Nur Batterien/Akkus&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;batteries_packed_with_equipment&quot;,
+                    &quot;batteries_contained_in_equipment&quot;,
+                    &quot;batteries_only&quot;
+                  ],
+                  &quot;enumNames&quot;: [
+                    &quot;Beigef&uuml;gt&quot;,
+                    &quot;In Produkt enthalten&quot;,
+                    &quot;Nur Batterien/Akkus&quot;
+                  ]
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;weight&quot;: {
+            &quot;title&quot;: &quot;Gewicht der Lithium-Batterie&quot;,
+            &quot;description&quot;: &quot;Lithiumgewicht einer Zelle oder Batterie angeben&quot;,
+            &quot;examples&quot;: [
+              &quot;5 Gramm, 13 Gramm, 70 Gramm&quot;
+            ],
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;maxItems&quot;: 1,
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;unit&quot;,
+                &quot;value&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;title&quot;: &quot;Gewicht der Lithium-Batterie&quot;,
+                  &quot;description&quot;: &quot;Lithiumgewicht einer Zelle oder Batterie als numerischen Wert angeben&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;5, 13, 70&quot;
+                  ],
+                  &quot;type&quot;: &quot;number&quot;,
+                  &quot;minimum&quot;: 0,
+                  &quot;maxLength&quot;: 12
+                },
+                &quot;unit&quot;: {
+                  &quot;title&quot;: &quot;Gewichtseinheit Lithium-Batterie&quot;,
+                  &quot;description&quot;: &quot;Zugeh&ouml;rige Gewichtseinheit ausw&auml;hlen&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;Gramm&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;grams&quot;,
+                    &quot;hundredths_pounds&quot;,
+                    &quot;kilograms&quot;,
+                    &quot;milligrams&quot;,
+                    &quot;pounds&quot;,
+                    &quot;tons&quot;,
+                    &quot;ounces&quot;
+                  ],
+                  &quot;enumNames&quot;: [
+                    &quot;Gramm&quot;,
+                    &quot;Hundertstel Pfund&quot;,
+                    &quot;Kilogramm&quot;,
+                    &quot;Milligramm&quot;,
+                    &quot;Pfund&quot;,
+                    &quot;Tonnen&quot;,
+                    &quot;Unzen&quot;
+                  ]
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;supplier_declared_dg_hz_regulation&quot;: {
+      &quot;title&quot;: &quot;Gefahrgutvorschriften&quot;,
+      &quot;description&quot;: &quot;In der Liste einen Wert ausw&auml;hlen, wenn das Produkt als Gefahrgut eingestuft wird und Gefahrstoffe, Substanzen oder Abfallprodukte enth&auml;lt, deren Transport, Lagerung und/oder Entsorgung reguliert sind&quot;,
+      &quot;examples&quot;: [
+        &quot;GHS, Lagerung, Transport&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1000,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Gefahrgutvorschriften&quot;,
+            &quot;description&quot;: &quot;In der Liste einen Wert ausw&auml;hlen, wenn das Produkt als Gefahrgut eingestuft wird und Gefahrstoffe, Substanzen oder Abfallprodukte enth&auml;lt, deren Transport, Lagerung und/oder Entsorgung reguliert sind&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;GHS, Lagerung, Transport&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;other&quot;,
+              &quot;waste&quot;,
+              &quot;ghs&quot;,
+              &quot;storage&quot;,
+              &quot;not_applicable&quot;,
+              &quot;transportation&quot;,
+              &quot;unknown&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Andere&quot;,
+              &quot;Entsorgung&quot;,
+              &quot;GHS&quot;,
+              &quot;Lagerung&quot;,
+              &quot;Nicht zutreffend&quot;,
+              &quot;Transport&quot;,
+              &quot;Unbekannt&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;ghs&quot;: {
+      &quot;title&quot;: &quot;GHS&quot;,
+      &quot;description&quot;: &quot;Geben Sie die GHS-Informationen (Global Harmonisiertes System) an&quot;,
+      &quot;examples&quot;: [
+        &quot;NGK&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;classification&quot;: {
+            &quot;title&quot;: &quot;GHS-Einstufung&quot;,
+            &quot;description&quot;: &quot;GHS-CLP-Einstufung (Global Harmonisiertes System) f&uuml;r das Produkt angeben&quot;,
+            &quot;examples&quot;: [
+              &quot;Klasse: Explosiv, Unterkategorie: Fl&uuml;ssig&quot;
+            ],
+            &quot;type&quot;: &quot;array&quot;,
+            &quot;minItems&quot;: 1,
+            &quot;minUniqueItems&quot;: 1,
+            &quot;maxUniqueItems&quot;: 1000,
+            &quot;selectors&quot;: [
+              &quot;class&quot;
+            ],
+            &quot;items&quot;: {
+              &quot;type&quot;: &quot;object&quot;,
+              &quot;required&quot;: [
+                &quot;class&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;class&quot;: {
+                  &quot;title&quot;: &quot;GHS-Klasse&quot;,
+                  &quot;description&quot;: &quot;W&auml;hlen Sie die GHS-Klasse des Produkts aus der Liste der g&uuml;ltigen Werte, falls GHS als Gefahrgutverordnung ausgew&auml;hlt ist. Die GHS-Klasse gibt den Warnhinweis an, der durch das GHS-Klassifizierungssystem zugeordnet ist.&quot;,
+                  &quot;editable&quot;: true,
+                  &quot;hidden&quot;: false,
+                  &quot;examples&quot;: [
+                    &quot;Explosiv&quot;
+                  ],
+                  &quot;type&quot;: &quot;string&quot;,
+                  &quot;enum&quot;: [
+                    &quot;amzn_specific_no_label_with_warning&quot;,
+                    &quot;flammable&quot;,
+                    &quot;explosive&quot;,
+                    &quot;health_hazard&quot;,
+                    &quot;toxic&quot;,
+                    &quot;compressed_gas&quot;,
+                    &quot;oxidizing&quot;,
+                    &quot;irritant&quot;,
+                    &quot;environmentally_damaging&quot;,
+                    &quot;corrosive&quot;
+                  ],
+                  &quot;enumNames&quot;: [
+                    &quot;Amazon-spezifisch, kein Warnetikett&quot;,
+                    &quot;Entflammbar&quot;,
+                    &quot;Explosiv&quot;,
+                    &quot;Gesundheitssch&auml;dlich&quot;,
+                    &quot;Giftig&quot;,
+                    &quot;Komprimiertes Gas&quot;,
+                    &quot;Oxidierend&quot;,
+                    &quot;Reizend&quot;,
+                    &quot;Umweltsch&auml;dlich&quot;,
+                    &quot;&Auml;tzend&quot;
+                  ]
+                }
+              },
+              &quot;additionalProperties&quot;: false
+            }
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;contains_liquid_contents&quot;: {
+      &quot;title&quot;: &quot;Enth&auml;lt fl&uuml;ssigen Inhalt&quot;,
+      &quot;description&quot;: &quot;Enth&auml;lt das Produkt fl&uuml;ssigen Inhalt?&quot;,
+      &quot;examples&quot;: [
+        &quot;Ja&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Enth&auml;lt fl&uuml;ssigen Inhalt&quot;,
+            &quot;description&quot;: &quot;Enth&auml;lt das Produkt fl&uuml;ssigen Inhalt?&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Ja&quot;
+            ],
+            &quot;type&quot;: &quot;boolean&quot;,
+            &quot;enum&quot;: [
+              true,
+              false
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Ja&quot;,
+              &quot;Nein&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;liquid_volume&quot;: {
+      &quot;title&quot;: &quot;Fl&uuml;ssigkeitsvolumen&quot;,
+      &quot;description&quot;: &quot;Fl&uuml;ssigkeitsvolumen des Artikels angeben&quot;,
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Fl&uuml;ssigkeitsvolumen&quot;,
+            &quot;description&quot;: &quot;Fl&uuml;ssigkeitsvolumen als numerischen Wert angeben.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;10&quot;
+            ],
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;maxLength&quot;: 5000
+          },
+          &quot;unit&quot;: {
+            &quot;title&quot;: &quot;Fl&uuml;ssigkeitsvolumen &ndash; Einheit&quot;,
+            &quot;description&quot;: &quot;W&auml;hlen Sie die Ma&szlig;einheit f&uuml;r das Fl&uuml;ssigkeitsvolumen aus. Wenn ein Wert f&uuml;r das Artikelvolumen angegeben ist, m&uuml;ssen Sie auch die entsprechende Einheit eingeben.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Milliliter&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;cups&quot;,
+              &quot;imperial_gallons&quot;,
+              &quot;deciliters&quot;,
+              &quot;fluid_ounces&quot;,
+              &quot;gallons&quot;,
+              &quot;cubic_feet&quot;,
+              &quot;cubic_meters&quot;,
+              &quot;cubic_yards&quot;,
+              &quot;cubic_centimeters&quot;,
+              &quot;cubic_inches&quot;,
+              &quot;liters&quot;,
+              &quot;microliters&quot;,
+              &quot;milliliters&quot;,
+              &quot;nanoliters&quot;,
+              &quot;picoliters&quot;,
+              &quot;pints&quot;,
+              &quot;quarts&quot;,
+              &quot;unknown_modifier&quot;,
+              &quot;centiliters&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Becher&quot;,
+              &quot;Britische Gallonen (Imperiales System)&quot;,
+              &quot;Deziliter&quot;,
+              &quot;Fl&uuml;ssigunzen&quot;,
+              &quot;Gallonen&quot;,
+              &quot;Kubikfu&szlig;&quot;,
+              &quot;Kubikmeter&quot;,
+              &quot;Kubikyards&quot;,
+              &quot;Kubikzentimeter&quot;,
+              &quot;Kubikzoll&quot;,
+              &quot;Liter&quot;,
+              &quot;Mikroliter&quot;,
+              &quot;Milliliter&quot;,
+              &quot;Nanoliter&quot;,
+              &quot;Picoliter&quot;,
+              &quot;Pinte&quot;,
+              &quot;Quart&quot;,
+              &quot;Unbekannt&quot;,
+              &quot;Zentiliter&quot;
+            ]
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;hazmat&quot;: {
+      &quot;title&quot;: &quot;Gefahrstoffvorschrift&quot;,
+      &quot;description&quot;: &quot;Informationen zu Gefahrstoffen f&uuml;r den Aspekt angeben, der f&uuml;r das Produkt ausgew&auml;hlt wurde&quot;,
+      &quot;examples&quot;: [
+        &quot;UN1993&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;aspect&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;aspect&quot;,
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;aspect&quot;: {
+            &quot;title&quot;: &quot;Gefahrstoffvorschrift&quot;,
+            &quot;description&quot;: &quot;W&auml;hlen Sie den Aspekt oder die Aufsichtsbeh&ouml;rde, die f&uuml;r die Informationen zu gef&auml;hrlichen Produkten verwendet wird&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Gefahrstoffkennung der Vereinten Nationen&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;united_nations_regulatory_id&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Gefahrstoffkennung der Vereinten Nationen&quot;
+            ]
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Gefahrstoff&quot;,
+            &quot;description&quot;: &quot;Geben Sie die UN Nummer des Gefahrguts aus Abschnitt 3.2.1 der \&quot;Dangerous Goods\&quot; Liste der aktuellsten ADR Version an. Alternativ suchen Sie die Informationen auf dem zugeh&ouml;rigen Sicherheitsdatenblatt.&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;UN1993&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;maxLength&quot;: 2197
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;safety_data_sheet_url&quot;: {
+      &quot;title&quot;: &quot;URL d. Sicherheitsdatenblatts (SDS/MSDS)&quot;,
+      &quot;description&quot;: &quot;SDS/MSDS-URL angeben.  Erforderlich f&uuml;r Informationen zu Gefahrgut (SDS/MSDS), z.&nbsp;B. physikalische Daten (Flammpunkt, pH-Wert usw.), Gesundheitsaspekte, Lagerung und Transport von potenziell gef&auml;hrlichen Substanzen.&quot;,
+      &quot;examples&quot;: [
+        &quot;www.safetysheetsRus.com/hazardous_substance/msds.pdf&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;,
+        &quot;language_tag&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;language_tag&quot;,
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;language_tag&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/language_tag&quot;
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;URL d. Sicherheitsdatenblatts (SDS/MSDS)&quot;,
+            &quot;description&quot;: &quot;Geben Sie die SDS/MSDS-URL an, wenn in der Spalte Gefahrgutvorschriften ein anderer Wert als nicht zutreffend oder Unbekannt ausgew&auml;hlt wurde.&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;www.safetysheetsRus.com/hazardous_substance/msds.pdf&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;maxLength&quot;: 23397
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;item_weight&quot;: {
+      &quot;title&quot;: &quot;Artikelgewicht&quot;,
+      &quot;description&quot;: &quot;Gewicht des Artikels angeben (ohne Verpackung)&quot;,
+      &quot;examples&quot;: [
+        &quot;30 Kilogramm, 1.5 Pfund&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;unit&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Artikelgewicht&quot;,
+            &quot;description&quot;: &quot;Geben Sie das Artikelgewicht als numerischen Wert an (ohne Verpackung)&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;30, 1.5&quot;
+            ],
+            &quot;type&quot;: &quot;number&quot;,
+            &quot;minimum&quot;: 0,
+            &quot;maxLength&quot;: 5000
+          },
+          &quot;unit&quot;: {
+            &quot;title&quot;: &quot;Artikelgewicht &ndash; Einheit&quot;,
+            &quot;description&quot;: &quot;Entsprechende Einheit ausw&auml;hlen&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Kilogramm, Pfund&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;grams&quot;,
+              &quot;hundredths_pounds&quot;,
+              &quot;kilograms&quot;,
+              &quot;milligrams&quot;,
+              &quot;pounds&quot;,
+              &quot;tons&quot;,
+              &quot;ounces&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Gramm&quot;,
+              &quot;Hundertstel Pfund&quot;,
+              &quot;Kilogramm&quot;,
+              &quot;Milligramm&quot;,
+              &quot;Pfund&quot;,
+              &quot;Tonnen&quot;,
+              &quot;Unzen&quot;
+            ]
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;eu_toys_safety_directive_age_warning&quot;: {
+      &quot;title&quot;: &quot;EU Spielzeugrichtlinie Altersabh&auml;ngiger Warnhinweis&quot;,
+      &quot;description&quot;: &quot;Altersabh&auml;ngiger Warnhinweis gem&auml;&szlig; der EU Spielzeugrichtlinie 2009/48/EC&quot;,
+      &quot;examples&quot;: [
+        &quot;Nicht geeignet f&uuml;r Kinder unter 13 Jahren. Benutzung unter Aufsicht Erwachsener&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;Alterswarnung gem&auml;&szlig; EU-Sich.richtlinie&quot;,
+            &quot;description&quot;: &quot;Altersspezifische Warnung f&uuml;r das Produkt gem&auml;&szlig; EU-Sicherheitsrichtlinie 2009/48/EC f&uuml;r Spielzeug angeben&quot;,
+            &quot;editable&quot;: true,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Kein Warnhinweis zutreffend, Nicht geeignet f&uuml;r Kinder unter 10 Jahren. Benutzung unter Aufsicht von Erwachsen&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;no_warning_applicable&quot;,
+              &quot;not_suitable_under_18_months&quot;,
+              &quot;not_suitable_under_36_months&quot;,
+              &quot;not_suitable_under_10_years&quot;,
+              &quot;not_suitable_under_10_years_supervision&quot;,
+              &quot;not_suitable_under_11_years&quot;,
+              &quot;not_suitable_under_11_years_supervision&quot;,
+              &quot;not_suitable_under_12_years&quot;,
+              &quot;not_suitable_under_12_years_supervision&quot;,
+              &quot;not_suitable_under_13_years&quot;,
+              &quot;not_suitable_under_13_years_supervision&quot;,
+              &quot;not_suitable_under_14_years&quot;,
+              &quot;not_suitable_under_14_years_supervision&quot;,
+              &quot;not_suitable_under_3_years&quot;,
+              &quot;not_suitable_under_3_years_supervision&quot;,
+              &quot;not_suitable_under_4_years&quot;,
+              &quot;not_suitable_under_4_years_supervision&quot;,
+              &quot;not_suitable_under_5_years&quot;,
+              &quot;not_suitable_under_5_years_supervision&quot;,
+              &quot;not_suitable_under_6_years&quot;,
+              &quot;not_suitable_under_6_years_supervision&quot;,
+              &quot;not_suitable_under_7_years&quot;,
+              &quot;not_suitable_under_7_years_supervision&quot;,
+              &quot;not_suitable_under_8_years&quot;,
+              &quot;not_suitable_under_8_years_supervision&quot;,
+              &quot;not_suitable_under_9_years&quot;,
+              &quot;not_suitable_under_9_years_supervision&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Kein Warnhinweis zutreffend&quot;,
+              &quot;Nicht f&uuml;r Kinder unter 18 Monaten geeignet&quot;,
+              &quot;Nicht f&uuml;r Kinder unter 36 Monaten geeignet&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 10 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 10 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 11 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 11 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 12 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 12 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 13 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 13 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 14 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 14 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 3 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 3 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 4 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 4 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 5 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 5 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 6 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 6 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 7 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 7 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 8 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 8 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 9 Jahren&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder unter 9 Jahren. Benutzung unter Aufsicht von Erwachsenen&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;eu_toys_safety_directive_warning&quot;: {
+      &quot;title&quot;: &quot;EU Spielzeugrichtlinie  Altersunabh&auml;ngiger Warnhinweis&quot;,
+      &quot;description&quot;: &quot;Altersunabh&auml;ngiger Warnhinweis gem&auml;&szlig; der EU Spielzeugrichtlinie 2009/48/EC&quot;,
+      &quot;examples&quot;: [
+        &quot;Mit Schutzausr&uuml;stung zu benutzen. Nicht im Stra&szlig;enverkehr zu verwenden&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 16,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;marketplace_id&quot;,
+          &quot;value&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          },
+          &quot;value&quot;: {
+            &quot;title&quot;: &quot;EU-Richtlinie &ndash; Nicht altersspez. Warn.&quot;,
+            &quot;description&quot;: &quot;Nicht altersspezifische Warnung gem&auml;&szlig; EU-Sicherheitsrichtlinie 2009/48/EC f&uuml;r Spielzeug angeben&quot;,
+            &quot;editable&quot;: false,
+            &quot;hidden&quot;: false,
+            &quot;examples&quot;: [
+              &quot;Benutzung unter unmittelbarer Aufsicht von Erwachsenen, Dieses Produkt ist nicht zum Joggen oder Skaten geeignet&quot;
+            ],
+            &quot;type&quot;: &quot;string&quot;,
+            &quot;enum&quot;: [
+              &quot;adult_supervision_required&quot;,
+              &quot;no_protective_equipment&quot;,
+              &quot;small_magnets_swallowing_risk&quot;,
+              &quot;stroller_warning&quot;,
+              &quot;fragrances_allergy_risk&quot;,
+              &quot;toy_inside&quot;,
+              &quot;no_warning_applicable&quot;,
+              &quot;balloons_choking_suffocating_hazard&quot;,
+              &quot;do_not_aim_at_eyes_or_face&quot;,
+              &quot;do_not_use_during_thunderstorm&quot;,
+              &quot;not_suitable_under_10_months&quot;,
+              &quot;not_suitable_over_36_months&quot;,
+              &quot;do_not_use_in_traffic&quot;,
+              &quot;do_not_fire_near_eyes&quot;,
+              &quot;do_not_use_near_overhead_power_lines&quot;,
+              &quot;do_not_use_indoors&quot;,
+              &quot;do_not_use_close_to_ear&quot;,
+              &quot;do_not_carry_loose_in_pocket&quot;,
+              &quot;only_domestic_use&quot;,
+              &quot;do_not_freeze&quot;,
+              &quot;water_adult_supervision_required&quot;,
+              &quot;protective_equipment_required&quot;,
+              &quot;only_use_manufacturer_accessories&quot;,
+              &quot;contains_long_hair_swallowing_risk&quot;,
+              &quot;strangulation_hazard&quot;,
+              &quot;falling_tipping_risk&quot;,
+              &quot;risk_of_entanglement&quot;
+            ],
+            &quot;enumNames&quot;: [
+              &quot;Benutzung unter unmittelbarer Aufsicht von Erwachsenen&quot;,
+              &quot;Dieser Gegenstand bietet keinen Schutz.&quot;,
+              &quot;Dieses Produkt enth&auml;lt (einen) kleine(n) Magnet(e). Verschluckte Magnete k&ouml;nnen sich im Darm gegenseitig anziehen und schwere Verletzungen verursachen. Ziehen Sie sofort einen Arzt zu Rate, wenn (ein) Magnet(e) verschluckt wird (werden)&quot;,
+              &quot;Dieses Produkt ist nicht zum Joggen oder Skaten geeignet&quot;,
+              &quot;Enth&auml;lt Duftstoffe, die Allergien ausl&ouml;sen k&ouml;nnen&quot;,
+              &quot;Enth&auml;lt Spielzeug. Beaufsichtigung durch Erwachsene empfohlen&quot;,
+              &quot;Kein Warnhinweis zutreffend&quot;,
+              &quot;Kleine Kinder k&ouml;nnen an nicht aufgeblasenen oder geplatzten Ballons ersticken. Nicht aufgeblasene Ballons sind von Kindern fernzuhalten. Geplatzte Ballons sind unverz&uuml;glich zu entfernen&quot;,
+              &quot;Nicht auf Augen oder Gesicht zielen.&quot;,
+              &quot;Nicht bei Gewitter benutzen.&quot;,
+              &quot;Nicht f&uuml;r Kinder unter 10 Monaten geeignet&quot;,
+              &quot;Nicht geeignet f&uuml;r Kinder &uuml;ber 36 Monate&quot;,
+              &quot;Nicht im Stra&szlig;enverkehr zu verwenden.&quot;,
+              &quot;Nicht in Augenn&auml;he s&uuml;nden . n&auml;he .&quot;,
+              &quot;Nicht in der N&auml;he von Hochspannungsleitungen benutzen.&quot;,
+              &quot;Nicht in geschlossenen R&auml;umen benutzen.&quot;,
+              &quot;Nicht in Ohrn&auml;he benutzen. Missbrauch kann zu H&ouml;rsch&auml;den f&uuml;hren.&quot;,
+              &quot;Nicht unverpackt in der Tasche tragen.&quot;,
+              &quot;Nur f&uuml;r den Hausgebrauch&quot;,
+              &quot;Nur im K&uuml;hlschrank k&uuml;hlen, nicht im Gefrierfach aufbewahren.&quot;,
+              &quot;Nur in Gew&auml;ssern verwenden, in denen sich das Kind in der Tiefe befindet und die von Erwachsenen beaufsichtigt werden&quot;,
+              &quot;Nur mit Schutzausr&uuml;stung benutzen.&quot;,
+              &quot;Nur mit vom Hersteller empfohlenen Zubeh&ouml;r verwenden.&quot;,
+              &quot;Schluckgefahr, da der Gegenstand lange Haare enth&auml;lt&quot;,
+              &quot;Strangulationsgefahr.&quot;,
+              &quot;Sturz- oder Stolpergefahr. Lassen Sie Kinder unter 36 Monaten nicht unbeaufsichtigt sitzen oder spielen.&quot;,
+              &quot;Um m&ouml;gliche Verletzungen durch Verwicklungen zu vermeiden, entfernen Sie dieses Spielzeug, wenn das Kind versucht, aus einer Krabbel-Position auf H&auml;nden und Knien aufzustehen&quot;
+            ]
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    },
+    &quot;item_dimensions&quot;: {
+      &quot;title&quot;: &quot;Artikelabmessungen&quot;,
+      &quot;description&quot;: &quot;Abmessungen des Artikels angeben&quot;,
+      &quot;examples&quot;: [
+        &quot;10 Zoll&quot;
+      ],
+      &quot;type&quot;: &quot;array&quot;,
+      &quot;minItems&quot;: 1,
+      &quot;minUniqueItems&quot;: 1,
+      &quot;maxUniqueItems&quot;: 1,
+      &quot;selectors&quot;: [
+        &quot;marketplace_id&quot;
+      ],
+      &quot;items&quot;: {
+        &quot;type&quot;: &quot;object&quot;,
+        &quot;required&quot;: [
+          &quot;height&quot;,
+          &quot;length&quot;,
+          &quot;marketplace_id&quot;,
+          &quot;width&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;length&quot;: {
+            &quot;title&quot;: &quot;Artikell&auml;nge&quot;,
+            &quot;description&quot;: &quot;L&auml;nge des Artikels angeben&quot;,
+            &quot;examples&quot;: [
+              &quot;10&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;required&quot;: [
+              &quot;unit&quot;,
+              &quot;value&quot;
+            ],
+            &quot;properties&quot;: {
+              &quot;value&quot;: {
+                &quot;title&quot;: &quot;Artikell&auml;nge&quot;,
+                &quot;description&quot;: &quot;L&auml;nge des Artikels als numerischen Wert angeben.&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;10&quot;
+                ],
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;maximum&quot;: 1E+9
+              },
+              &quot;unit&quot;: {
+                &quot;title&quot;: &quot;Artikell&auml;nge &ndash; Einheit&quot;,
+                &quot;description&quot;: &quot;W&auml;hlen Sie die Ma&szlig;einheit f&uuml;r die L&auml;nge des Artikels aus. Wenn ein Wert f&uuml;r die L&auml;nge des Artikels angegeben ist, m&uuml;ssen Sie auch die entsprechende Einheit eingeben.&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;Zoll&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [
+                  &quot;angstrom&quot;,
+                  &quot;decimeters&quot;,
+                  &quot;feet&quot;,
+                  &quot;hundredths_inches&quot;,
+                  &quot;kilometers&quot;,
+                  &quot;miles&quot;,
+                  &quot;meters&quot;,
+                  &quot;micrometer&quot;,
+                  &quot;millimeters&quot;,
+                  &quot;mils&quot;,
+                  &quot;nanometer&quot;,
+                  &quot;picometer&quot;,
+                  &quot;yards&quot;,
+                  &quot;centimeters&quot;,
+                  &quot;inches&quot;
+                ],
+                &quot;enumNames&quot;: [
+                  &quot;Angstrom&quot;,
+                  &quot;Dezimeter&quot;,
+                  &quot;Fu&szlig;&quot;,
+                  &quot;Hundertstel Zoll&quot;,
+                  &quot;Kilometer&quot;,
+                  &quot;Meilen&quot;,
+                  &quot;Meter&quot;,
+                  &quot;Micron&quot;,
+                  &quot;Millimeter&quot;,
+                  &quot;Mils&quot;,
+                  &quot;Nanometer&quot;,
+                  &quot;Pikometer&quot;,
+                  &quot;Yards&quot;,
+                  &quot;Zentimeter&quot;,
+                  &quot;Zoll&quot;
+                ]
+              }
+            },
+            &quot;additionalProperties&quot;: false
+          },
+          &quot;width&quot;: {
+            &quot;title&quot;: &quot;Artikelbreite&quot;,
+            &quot;description&quot;: &quot;Breite des Artikels angeben&quot;,
+            &quot;examples&quot;: [
+              &quot;2&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;required&quot;: [
+              &quot;unit&quot;,
+              &quot;value&quot;
+            ],
+            &quot;properties&quot;: {
+              &quot;value&quot;: {
+                &quot;title&quot;: &quot;Artikelbreite&quot;,
+                &quot;description&quot;: &quot;Breite des Artikels als numerischen Wert angeben.&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;2&quot;
+                ],
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;maximum&quot;: 1E+9
+              },
+              &quot;unit&quot;: {
+                &quot;title&quot;: &quot;Artikelbreite &ndash; Einheit&quot;,
+                &quot;description&quot;: &quot;W&auml;hlen Sie die Ma&szlig;einheit f&uuml;r die Breite des Artikels aus. Wenn ein Wert f&uuml;r die Breite des Artikels angegeben ist, m&uuml;ssen Sie auch die entsprechende Einheit eingeben.&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;Zoll&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [
+                  &quot;angstrom&quot;,
+                  &quot;decimeters&quot;,
+                  &quot;feet&quot;,
+                  &quot;hundredths_inches&quot;,
+                  &quot;kilometers&quot;,
+                  &quot;miles&quot;,
+                  &quot;meters&quot;,
+                  &quot;micrometer&quot;,
+                  &quot;millimeters&quot;,
+                  &quot;mils&quot;,
+                  &quot;nanometer&quot;,
+                  &quot;picometer&quot;,
+                  &quot;yards&quot;,
+                  &quot;centimeters&quot;,
+                  &quot;inches&quot;
+                ],
+                &quot;enumNames&quot;: [
+                  &quot;Angstrom&quot;,
+                  &quot;Dezimeter&quot;,
+                  &quot;Fu&szlig;&quot;,
+                  &quot;Hundertstel Zoll&quot;,
+                  &quot;Kilometer&quot;,
+                  &quot;Meilen&quot;,
+                  &quot;Meter&quot;,
+                  &quot;Micron&quot;,
+                  &quot;Millimeter&quot;,
+                  &quot;Mils&quot;,
+                  &quot;Nanometer&quot;,
+                  &quot;Pikometer&quot;,
+                  &quot;Yards&quot;,
+                  &quot;Zentimeter&quot;,
+                  &quot;Zoll&quot;
+                ]
+              }
+            },
+            &quot;additionalProperties&quot;: false
+          },
+          &quot;height&quot;: {
+            &quot;title&quot;: &quot;Artikelh&ouml;he&quot;,
+            &quot;description&quot;: &quot;H&ouml;he des Artikels angeben&quot;,
+            &quot;examples&quot;: [
+              &quot;50 Zentimeter&quot;
+            ],
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;required&quot;: [
+              &quot;unit&quot;,
+              &quot;value&quot;
+            ],
+            &quot;properties&quot;: {
+              &quot;value&quot;: {
+                &quot;title&quot;: &quot;Artikelh&ouml;he&quot;,
+                &quot;description&quot;: &quot;H&ouml;he des Artikels als numerischen Wert angeben.&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;50&quot;
+                ],
+                &quot;type&quot;: &quot;number&quot;,
+                &quot;maximum&quot;: 1E+9
+              },
+              &quot;unit&quot;: {
+                &quot;title&quot;: &quot;Artikelh&ouml;he &ndash; Einheit&quot;,
+                &quot;description&quot;: &quot;W&auml;hlen Sie die Ma&szlig;einheit f&uuml;r die H&ouml;he des Artikels aus. Wenn ein Wert f&uuml;r die H&ouml;he des Artikels angegeben ist, m&uuml;ssen Sie auch die entsprechende Einheit eingeben.&quot;,
+                &quot;editable&quot;: true,
+                &quot;hidden&quot;: false,
+                &quot;examples&quot;: [
+                  &quot;Zoll&quot;
+                ],
+                &quot;type&quot;: &quot;string&quot;,
+                &quot;enum&quot;: [
+                  &quot;angstrom&quot;,
+                  &quot;decimeters&quot;,
+                  &quot;feet&quot;,
+                  &quot;hundredths_inches&quot;,
+                  &quot;kilometers&quot;,
+                  &quot;miles&quot;,
+                  &quot;meters&quot;,
+                  &quot;micrometer&quot;,
+                  &quot;millimeters&quot;,
+                  &quot;mils&quot;,
+                  &quot;nanometer&quot;,
+                  &quot;picometer&quot;,
+                  &quot;yards&quot;,
+                  &quot;centimeters&quot;,
+                  &quot;inches&quot;
+                ],
+                &quot;enumNames&quot;: [
+                  &quot;Angstrom&quot;,
+                  &quot;Dezimeter&quot;,
+                  &quot;Fu&szlig;&quot;,
+                  &quot;Hundertstel Zoll&quot;,
+                  &quot;Kilometer&quot;,
+                  &quot;Meilen&quot;,
+                  &quot;Meter&quot;,
+                  &quot;Micron&quot;,
+                  &quot;Millimeter&quot;,
+                  &quot;Mils&quot;,
+                  &quot;Nanometer&quot;,
+                  &quot;Pikometer&quot;,
+                  &quot;Yards&quot;,
+                  &quot;Zentimeter&quot;,
+                  &quot;Zoll&quot;
+                ]
+              }
+            },
+            &quot;additionalProperties&quot;: false
+          },
+          &quot;marketplace_id&quot;: {
+            &quot;$ref&quot;: &quot;#/$defs/marketplace_id&quot;
+          }
+        },
+        &quot;additionalProperties&quot;: false
+      }
+    }
+  },
+  &quot;additionalProperties&quot;: false,
+  &quot;allOf&quot;: [
+    {
+      &quot;if&quot;: {
+        &quot;anyOf&quot;: [
+          {
+            &quot;not&quot;: {
+              &quot;required&quot;: [
+                &quot;merchant_suggested_asin&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;merchant_suggested_asin&quot;: {
+                  &quot;items&quot;: {
+                    &quot;required&quot;: [
+                      &quot;value&quot;
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            &quot;not&quot;: {
+              &quot;required&quot;: [
+                &quot;merchant_suggested_asin&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;merchant_suggested_asin&quot;: {
+                  &quot;items&quot;: {
+                    &quot;required&quot;: [
+                      &quot;value&quot;
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;externally_assigned_product_identifier&quot;
+        ]
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;anyOf&quot;: [
+          {
+            &quot;not&quot;: {
+              &quot;required&quot;: [
+                &quot;externally_assigned_product_identifier&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;externally_assigned_product_identifier&quot;: {
+                  &quot;items&quot;: {
+                    &quot;required&quot;: [
+                      &quot;value&quot;
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          {
+            &quot;not&quot;: {
+              &quot;required&quot;: [
+                &quot;externally_assigned_product_identifier&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;externally_assigned_product_identifier&quot;: {
+                  &quot;items&quot;: {
+                    &quot;required&quot;: [
+                      &quot;value&quot;
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;merchant_suggested_asin&quot;
+        ]
+      }
+    },
+    {
+      &quot;properties&quot;: {
+        &quot;fulfillment_availability&quot;: {
+          &quot;items&quot;: {
+            &quot;if&quot;: {
+              &quot;not&quot;: {
+                &quot;allOf&quot;: [
+                  {
+                    &quot;required&quot;: [
+                      &quot;fulfillment_channel_code&quot;
+                    ],
+                    &quot;properties&quot;: {
+                      &quot;fulfillment_channel_code&quot;: {
+                        &quot;enum&quot;: [
+                          &quot;DEFAULT&quot;
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    &quot;not&quot;: {
+                      &quot;required&quot;: [
+                        &quot;is_inventory_available&quot;
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            &quot;then&quot;: {
+              &quot;not&quot;: {
+                &quot;required&quot;: [
+                  &quot;quantity&quot;
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;properties&quot;: {
+        &quot;fulfillment_availability&quot;: {
+          &quot;items&quot;: {
+            &quot;if&quot;: {
+              &quot;allOf&quot;: [
+                {
+                  &quot;required&quot;: [
+                    &quot;fulfillment_channel_code&quot;
+                  ],
+                  &quot;properties&quot;: {
+                    &quot;fulfillment_channel_code&quot;: {
+                      &quot;enum&quot;: [
+                        &quot;DEFAULT&quot;
+                      ]
+                    }
+                  }
+                },
+                {
+                  &quot;not&quot;: {
+                    &quot;required&quot;: [
+                      &quot;is_inventory_available&quot;
+                    ]
+                  }
+                }
+              ]
+            },
+            &quot;then&quot;: {
+              &quot;required&quot;: [
+                &quot;quantity&quot;
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;properties&quot;: {
+        &quot;fulfillment_availability&quot;: {
+          &quot;items&quot;: {
+            &quot;if&quot;: {
+              &quot;not&quot;: {
+                &quot;required&quot;: [
+                  &quot;fulfillment_channel_code&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;fulfillment_channel_code&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;DEFAULT&quot;
+                    ]
+                  }
+                }
+              }
+            },
+            &quot;then&quot;: {
+              &quot;not&quot;: {
+                &quot;required&quot;: [
+                  &quot;lead_time_to_ship_max_days&quot;
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;properties&quot;: {
+        &quot;fulfillment_availability&quot;: {
+          &quot;items&quot;: {
+            &quot;if&quot;: {
+              &quot;not&quot;: {
+                &quot;required&quot;: [
+                  &quot;fulfillment_channel_code&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;fulfillment_channel_code&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;DEFAULT&quot;
+                    ]
+                  }
+                }
+              }
+            },
+            &quot;then&quot;: {
+              &quot;not&quot;: {
+                &quot;required&quot;: [
+                  &quot;restock_date&quot;
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;properties&quot;: {
+        &quot;fulfillment_availability&quot;: {
+          &quot;items&quot;: {
+            &quot;if&quot;: {
+              &quot;not&quot;: {
+                &quot;allOf&quot;: [
+                  {
+                    &quot;required&quot;: [
+                      &quot;fulfillment_channel_code&quot;
+                    ],
+                    &quot;properties&quot;: {
+                      &quot;fulfillment_channel_code&quot;: {
+                        &quot;enum&quot;: [
+                          &quot;DEFAULT&quot;
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    &quot;not&quot;: {
+                      &quot;required&quot;: [
+                        &quot;quantity&quot;
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            &quot;then&quot;: {
+              &quot;not&quot;: {
+                &quot;required&quot;: [
+                  &quot;is_inventory_available&quot;
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;properties&quot;: {
+        &quot;fulfillment_availability&quot;: {
+          &quot;items&quot;: {
+            &quot;if&quot;: {
+              &quot;allOf&quot;: [
+                {
+                  &quot;required&quot;: [
+                    &quot;fulfillment_channel_code&quot;
+                  ],
+                  &quot;properties&quot;: {
+                    &quot;fulfillment_channel_code&quot;: {
+                      &quot;enum&quot;: [
+                        &quot;DEFAULT&quot;
+                      ]
+                    }
+                  }
+                },
+                {
+                  &quot;not&quot;: {
+                    &quot;required&quot;: [
+                      &quot;quantity&quot;
+                    ]
+                  }
+                }
+              ]
+            },
+            &quot;then&quot;: {
+              &quot;required&quot;: [
+                &quot;is_inventory_available&quot;
+              ]
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;not&quot;: {
+          &quot;required&quot;: [
+            &quot;skip_offer&quot;
+          ],
+          &quot;properties&quot;: {
+            &quot;skip_offer&quot;: {
+              &quot;contains&quot;: {
+                &quot;required&quot;: [
+                  &quot;value&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;value&quot;: {
+                    &quot;enum&quot;: [
+                      true
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;fulfillment_availability&quot;
+        ]
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;anyOf&quot;: [
+          {
+            &quot;not&quot;: {
+              &quot;required&quot;: [
+                &quot;skip_offer&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;skip_offer&quot;: {
+                  &quot;contains&quot;: {
+                    &quot;required&quot;: [
+                      &quot;value&quot;
+                    ],
+                    &quot;properties&quot;: {
+                      &quot;value&quot;: {
+                        &quot;enum&quot;: [
+                          true
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            &quot;not&quot;: {
+              &quot;required&quot;: [
+                &quot;skip_offer&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;skip_offer&quot;: {
+                  &quot;contains&quot;: {
+                    &quot;required&quot;: [
+                      &quot;value&quot;
+                    ],
+                    &quot;properties&quot;: {
+                      &quot;value&quot;: {
+                        &quot;enum&quot;: [
+                          true
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;condition_type&quot;
+        ]
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;anyOf&quot;: [
+          {
+            &quot;allOf&quot;: [
+              {
+                &quot;required&quot;: [
+                  &quot;fulfillment_availability&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;fulfillment_availability&quot;: {
+                    &quot;contains&quot;: {
+                      &quot;required&quot;: [
+                        &quot;fulfillment_channel_code&quot;
+                      ],
+                      &quot;properties&quot;: {
+                        &quot;fulfillment_channel_code&quot;: {
+                          &quot;enum&quot;: [
+                            &quot;DEFAULT&quot;
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                &quot;not&quot;: {
+                  &quot;required&quot;: [
+                    &quot;skip_offer&quot;
+                  ],
+                  &quot;properties&quot;: {
+                    &quot;skip_offer&quot;: {
+                      &quot;contains&quot;: {
+                        &quot;required&quot;: [
+                          &quot;value&quot;
+                        ],
+                        &quot;properties&quot;: {
+                          &quot;value&quot;: {
+                            &quot;enum&quot;: [
+                              true
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            &quot;allOf&quot;: [
+              {
+                &quot;required&quot;: [
+                  &quot;fulfillment_availability&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;fulfillment_availability&quot;: {
+                    &quot;contains&quot;: {
+                      &quot;required&quot;: [
+                        &quot;fulfillment_channel_code&quot;
+                      ],
+                      &quot;properties&quot;: {
+                        &quot;fulfillment_channel_code&quot;: {
+                          &quot;enum&quot;: [
+                            &quot;DEFAULT&quot;
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              {
+                &quot;not&quot;: {
+                  &quot;required&quot;: [
+                    &quot;skip_offer&quot;
+                  ],
+                  &quot;properties&quot;: {
+                    &quot;skip_offer&quot;: {
+                      &quot;contains&quot;: {
+                        &quot;required&quot;: [
+                          &quot;value&quot;
+                        ],
+                        &quot;properties&quot;: {
+                          &quot;value&quot;: {
+                            &quot;enum&quot;: [
+                              true
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      &quot;then&quot;: {
+        &quot;required&quot;: [
+          &quot;merchant_shipping_group&quot;
+        ]
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;required&quot;: [
+          &quot;supplier_declared_dg_hz_regulation&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;supplier_declared_dg_hz_regulation&quot;: {
+            &quot;contains&quot;: {
+              &quot;required&quot;: [
+                &quot;value&quot;
+              ],
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;enum&quot;: [
+                    &quot;not_applicable&quot;
+                  ]
+                }
+              }
+            }
+          }
+        }
+      },
+      &quot;then&quot;: {
+        &quot;properties&quot;: {
+          &quot;supplier_declared_dg_hz_regulation&quot;: {
+            &quot;items&quot;: {
+              &quot;properties&quot;: {
+                &quot;value&quot;: {
+                  &quot;not&quot;: {
+                    &quot;enum&quot;: [
+                      &quot;other&quot;,
+                      &quot;storage&quot;,
+                      &quot;transportation&quot;,
+                      &quot;waste&quot;
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      &quot;if&quot;: {
+        &quot;required&quot;: [
+          &quot;liquid_volume&quot;
+        ],
+        &quot;properties&quot;: {
+          &quot;liquid_volume&quot;: {
+            &quot;items&quot;: {
+              &quot;required&quot;: [
+                &quot;value&quot;
+              ]
+            }
+          }
+        }
+      },
+      &quot;then&quot;: {
+        &quot;properties&quot;: {
+          &quot;liquid_volume&quot;: {
+            &quot;items&quot;: {
+              &quot;required&quot;: [
+                &quot;unit&quot;
+              ]
+            }
+          }
+        }
+      }
+    }
+  ]
+}</div></div></div><div class="last-modified"> Last modified: 12 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="product-type.html">Product type</a>   <a class="navigation-links__next" href="listing.html">Listing</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>
