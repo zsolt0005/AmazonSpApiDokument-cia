@@ -1,0 +1,152 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en-US" data-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex"><meta name="built-on" content="2024-05-13T07:41:58.7834908"><title>Order change | Amazon</title><script type="application/json" id="virtual-toc-data">[]</script><script type="application/json" id="topic-shortcuts"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.css" rel="stylesheet"><meta name="msapplication-TileColor" content="#000000"><link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"><meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Order change | Amazon"><meta property="og:description" content=""><meta property="og:image" content=""><meta property="og:site_name" content="Amazon Help"><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:url" content="writerside-documentation/amazon/1.0.0/order-change.html"><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Order change | Amazon"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "@id": "writerside-documentation/amazon/1.0.0/order-change.html#webpage",
+    "url": "writerside-documentation/amazon/1.0.0/order-change.html",
+    "name": "Order change | Amazon",
+    "description": "",
+    "image": "",
+    "inLanguage":"en-US"
+}</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json">{
+    "@type": "WebSite",
+    "@id": "writerside-documentation/amazon/#website",
+    "url": "writerside-documentation/amazon/",
+    "name": "Amazon Help"
+}</script><!-- End Schema.org --></head><body data-id="Order-change" data-main-title="Order change" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}" data-template="article" data-breadcrumbs="Api.md|Api///Events.md|Events///EventBridge.md|EventBridge"><div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>Amazon 1.0.0 Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Order-change" id="Order-change.md">Order change</h1><div class="tabs" id="-xnhm2n_2" data-anchors="[-xnhm2n_3,-xnhm2n_7]"><div class="tabs__content" data-gtm="tab" id="-xnhm2n_3" data-title="Schema"><div class="code-block" data-lang="json" data-title="JSON" data-disable-link-processing="true">{
+  &quot;$schema&quot;: &quot;http://json-schema.org/draft-07/schema#&quot;,
+  &quot;type&quot;: &quot;object&quot;,
+  &quot;$id&quot;: &quot;http://example.com/example.json&quot;,
+  &quot;title&quot;: &quot;Account status changed notification&quot;,
+  &quot;description&quot;: &quot;The notification response schema that comprises the entire JSON document for AccountStatusChange notification.&quot;,
+  &quot;default&quot;: {},
+  &quot;examples&quot;: [
+    {
+      &quot;notificationVersion&quot;: &quot;1.0&quot;,
+      &quot;notificationType&quot;: &quot;ACCOUNT_STATUS_CHANGED&quot;,
+      &quot;payloadVersion&quot;: &quot;2021-01-01&quot;,
+      &quot;eventTime&quot;: &quot;2020-12-11T19:42:04.284Z&quot;,
+      &quot;payload&quot;: {
+        &quot;accountStatusChangeNotification&quot;: {
+          &quot;previousAccountStatus&quot; : &quot;NORMAL&quot;,
+          &quot;currentAccountStatus&quot; : &quot;AT_RISK&quot;
+        }
+      },
+      &quot;notificationMetadata&quot;: {
+        &quot;applicationId&quot;: &quot;amzn1.sellerapps.app.aacccfff-44aa-4b7c-b42b-ed4ec98dd746&quot;,
+        &quot;subscriptionId&quot;: &quot;subscription-id-d0e9e693-c3ad-4373-979f-ed4ec98dd746&quot;,
+        &quot;publishTime&quot;: &quot;2020-12-11T19:45:04.284Z&quot;,
+        &quot;notificationId&quot;: &quot;d0e9e693-c3ad-4373-979f-ed4ec98dd746&quot;
+      }
+    }
+  ],
+  &quot;required&quot;: [
+    &quot;notificationVersion&quot;,
+    &quot;notificationType&quot;,
+    &quot;payloadVersion&quot;,
+    &quot;eventTime&quot;,
+    &quot;payload&quot;,
+    &quot;notificationMetadata&quot;
+  ],
+  &quot;additionalProperties&quot;: true,
+  &quot;properties&quot;: {
+    &quot;notificationVersion&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The notification version.&quot;
+    },
+    &quot;notificationType&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The notification type.&quot;
+    },
+    &quot;payloadVersion&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The payload version of the notification.&quot;
+    },
+    &quot;eventTime&quot;: {
+      &quot;type&quot;: &quot;string&quot;,
+      &quot;description&quot;: &quot;The time the notification was sent.&quot;
+    },
+    &quot;notificationMetadata&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;description&quot;: &quot;The notification's metadata.&quot;,
+      &quot;required&quot;: [
+        &quot;applicationId&quot;,
+        &quot;subscriptionId&quot;,
+        &quot;publishTime&quot;,
+        &quot;notificationId&quot;
+      ],
+      &quot;properties&quot;: {
+        &quot;applicationId&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The application ID.&quot;
+        },
+        &quot;subscriptionId&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The subscription ID.&quot;
+        },
+        &quot;publishTime&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The time the notification was published.&quot;
+        },
+        &quot;notificationId&quot;: {
+          &quot;type&quot;: &quot;string&quot;,
+          &quot;description&quot;: &quot;The notification ID.&quot;
+        }
+      }
+    },
+    &quot;payload&quot;: {
+      &quot;type&quot;: &quot;object&quot;,
+      &quot;description&quot;: &quot;The payload part of the notification that will provide more in-depth detail about the notification&quot;,
+      &quot;required&quot;: [
+        &quot;accountStatusChangeNotification&quot;
+      ],
+      &quot;properties&quot;: {
+        &quot;accountStatusChangeNotification&quot;: {
+          &quot;type&quot;: &quot;object&quot;,
+          &quot;description&quot;: &quot;This payload contains both the previous account status, prior to the change, as well as the new account status for the seller.&quot;,
+          &quot;required&quot;: [
+            &quot;previousAccountStatus&quot;,
+            &quot;currentAccountStatus&quot;
+          ],
+          &quot;properties&quot;: {
+            &quot;previousAccountStatus&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;description&quot;: &quot;The seller's account status prior to this update.&quot;,
+              &quot;enum&quot;: [
+                &quot;NORMAL&quot;,
+                &quot;AT_RISK&quot;,
+                &quot;DEACTIVATED&quot;
+              ]
+            },
+            &quot;currentAccountStatus&quot;: {
+              &quot;type&quot;: &quot;string&quot;,
+              &quot;description&quot;: &quot;The seller's new account status.&quot;,
+              &quot;enum&quot;: [
+                &quot;NORMAL&quot;,
+                &quot;AT_RISK&quot;,
+                &quot;DEACTIVATED&quot;
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}</div><aside class="prompt" data-type="tip" data-title="" id="-xnhm2n_5"><p>Original schema: <a href="https://amazonservicesstatic.com/json-schemas/notifications/AccountStatusChangedNotification.json" id="-xnhm2n_6" data-external="true" rel="noopener noreferrer">HERE</a></p></aside></div><div class="tabs__content" data-gtm="tab" id="-xnhm2n_7" data-title="Example"><div class="code-block" data-lang="json" data-title="JSON" data-disable-link-processing="true">{
+  &quot;notificationVersion&quot;: &quot;1.0&quot;,
+  &quot;notificationType&quot;: &quot;ACCOUNT_STATUS_CHANGED&quot;,
+  &quot;payloadVersion&quot;: &quot;2021-01-01&quot;,
+  &quot;eventTime&quot;: &quot;2020-12-11T19:42:04.284Z&quot;,
+  &quot;payload&quot;: {
+    &quot;accountStatusChangeNotification&quot;: {
+      &quot;previousAccountStatus&quot; : &quot;NORMAL&quot;,
+      &quot;currentAccountStatus&quot; : &quot;AT_RISK&quot;
+    }
+  },
+  &quot;notificationMetadata&quot;: {
+    &quot;applicationId&quot;: &quot;amzn1.sellerapps.app.aacccfff-44aa-4b7c-b42b-ed4ec98dd746&quot;,
+    &quot;subscriptionId&quot;: &quot;subscription-id-d0e9e693-c3ad-4373-979f-ed4ec98dd746&quot;,
+    &quot;publishTime&quot;: &quot;2020-12-11T19:45:04.284Z&quot;,
+    &quot;notificationId&quot;: &quot;d0e9e693-c3ad-4373-979f-ed4ec98dd746&quot;
+  }
+}</div><aside class="prompt" data-type="tip" data-title="" id="-xnhm2n_9"><p>Original JSON: <a href="https://developer-docs.amazon.com/sp-api/docs/notification-type-values#branded_item_content_change" id="-xnhm2n_10" data-external="true" rel="noopener noreferrer">HERE</a></p></aside></div></div><div class="last-modified">Last modified: 13 May 2024</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom"><a href="listings-item-issues-change.html" class="navigation-links__prev">Listings item issues change</a><a href="sqs.html" class="navigation-links__next">SQS</a></div></article><div id="disqus_thread"></div></div></section></main></div><script src="https://resources.jetbrains.com/writerside/apidoc/6.10.0-b259/app.js"></script></body></html>
